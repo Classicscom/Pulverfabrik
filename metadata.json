@@ -1,0 +1,6 @@
+{
+  "name": "Pulverfabrik Niedernberg",
+  "description": "Moderne, cookie-freie Website der Pulverfabrik Niedernberg – Oberflächentechnik, Sandstrahlen, Pulverbeschichtung & mobiles Sandstrahlen.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
