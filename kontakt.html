@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt & Angebot | Pulverfabrik Niedernberg</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="stil.css">
+</head>
+<body class="bg-zinc-950 text-zinc-100 min-h-screen flex flex-col justify-between">
+  <!-- Header / Navigation -->
+  <header class="border-b border-zinc-800 bg-zinc-900/80 backdrop-blur relative z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Pulverfabrik Logo Start -->
+      <a href="index.html" id="pulverfabrik-logo" aria-label="Pulverfabrik Logo" class="flex items-center">
+        <img src="bilder/logo.png" alt="Pulverfabrik Logo" class="h-14 md:h-16 w-auto object-contain">
+      </a>
+      <!-- Pulverfabrik Logo End -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="index.html" class="hover:text-white text-zinc-400 transition">Startseite</a>
+        <a href="index.html#leistungen" class="hover:text-white text-zinc-400 transition">Leistungen</a>
+        <a href="index.html#anfahrt" class="hover:text-white text-zinc-400 transition">Anfahrt</a>
+        <a href="faq.html" class="hover:text-white text-zinc-400 transition">FAQ</a>
+        <a href="galerie.html" class="hover:text-white text-zinc-400 transition">Galerie</a>
+        <a href="https://www.instagram.com/pulver.fabrik/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="group inline-flex items-center justify-center w-8 h-8 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-600 hover:bg-zinc-800/80 transition-all shadow-sm">
+          <svg class="w-4 h-4 fill-current text-zinc-300 group-hover:text-white transition-colors" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+        <a href="kontakt.html" class="text-white border-b-2 border-white pb-1">Kontakt</a>
+      </nav>
+      <a href="kontakt.html" class="btn-chrome px-4 py-2 rounded-lg text-sm font-semibold">Angebot Anfordern</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto px-4 py-12 flex-1 w-full">
+    <div class="text-center mb-12">
+      <span class="badge-chrome px-3 py-1 rounded-full text-xs uppercase tracking-wider font-semibold">Direktkontakt</span>
+      <h1 class="text-4xl font-extrabold mt-4 text-chrome">Kontaktieren Sie uns</h1>
+      <p class="text-zinc-400 mt-2">Haben Sie Fragen oder benötigen Sie ein kostenloses, unverbindliches Angebot?</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 bg-zinc-900/60 border border-zinc-800 rounded-2xl p-8">
+      <div>
+        <h3 class="text-xl font-bold text-white mb-4">Kontaktdaten & Standort</h3>
+        <p class="text-zinc-300 mb-6 text-sm leading-relaxed">
+          <strong>Pulverfabrik Niedernberg</strong><br>
+          Inhaber: Mattia Mazzeo<br>
+          Boschstraße 3a<br>
+          63843 Niedernberg
+        </p>
+
+        <div class="space-y-3 text-sm text-zinc-300 mb-8">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded bg-zinc-800 flex items-center justify-center text-zinc-400">📞</span>
+            <a href="tel:017684347715" class="hover:text-white underline">0176 84347715</a>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded bg-zinc-800 flex items-center justify-center text-zinc-400">✉️</span>
+            <a href="mailto:info@pulverfabrik-niedernberg.de" class="hover:text-white underline">info@pulverfabrik-niedernberg.de</a>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded bg-zinc-800 flex items-center justify-center text-zinc-400">🕒</span>
+            <span>Mo-Fr: 08:00 - 17:00 Uhr</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <form class="space-y-4" onsubmit="event.preventDefault(); alert('Vielen Dank! Ihre Anfrage wurde simuliert gesendet.');">
+        <div>
+          <label class="block text-xs font-semibold text-zinc-400 mb-1">Ihr Name</label>
+          <input type="text" required class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-zinc-500" placeholder="Max Mustermann">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-zinc-400 mb-1">E-Mail Adresse / Telefon</label>
+          <input type="text" required class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-zinc-500" placeholder="max@beispiel.de oder 0176...">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-zinc-400 mb-1">Ihre Nachricht / Projektbeschreibung</label>
+          <textarea rows="4" required class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-zinc-500" placeholder="Ich interessiere mich für Pulverbeschichtung von 4 Alufelgen..."></textarea>
+        </div>
+        <button type="submit" class="btn-chrome w-full py-3 rounded-lg font-semibold text-sm">Anfrage Absenden</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-zinc-800 bg-zinc-950 py-8 text-center text-sm text-zinc-500">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div>© 2026 Pulverfabrik Niedernberg - Inhaber Mattia Mazzeo</div>
+      <div class="flex gap-4">
+        <a href="impressum.html" class="hover:text-zinc-300">Impressum</a>
+        <a href="datenschutz.html" class="hover:text-zinc-300">Datenschutz</a>
+        <a href="kontakt.html" class="hover:text-zinc-300">Kontakt</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

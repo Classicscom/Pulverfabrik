@@ -1,21 +1,19 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
 
-@layer base {
-  html {
-    scroll-behavior: smooth;
-    background-color: #09090b;
-    color: #f4f4f5;
-  }
+html {
+  scroll-behavior: smooth;
+  background-color: #09090b;
+  color: #f4f4f5;
+}
 
-  body {
-    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-    background-color: #09090b;
-    color: #f4f4f5;
-  }
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: #09090b;
+  color: #f4f4f5;
+}
 
-  h1, h2, h3, h4, .font-heading {
-    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
-  }
+h1, h2, h3, h4, .font-heading {
+  font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
 }
 
 /* Chrome & Silver Metallic Gradients */
@@ -78,33 +76,4 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #475569;
-}
-
-/* Dark Industrial Cards */
-.card-clean {
-  background-color: #18181b;
-  color: #f4f4f5;
-  border: 1px solid #27272a;
-  border-radius: 1rem;
-}
-
-.card-dark-clean {
-  background-color: #18181b;
-  color: #f4f4f5;
-  border: 1px solid #27272a;
-  border-radius: 1rem;
-}
-
-/* Cookie-Free Badge */
-.cookie-free-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.375rem;
-  padding: 0.2rem 0.6rem;
-  border-radius: 0.375rem;
-  font-size: 0.7rem;
-  font-weight: 600;
-  background-color: #18181b;
-  color: #cbd5e1;
-  border: 1px solid #3f3f46;
 }

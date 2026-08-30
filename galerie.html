@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie & Referenzprojekte | Pulverfabrik Niedernberg</title>
+  <meta name="description" content="Entdecken Sie unsere Referenzen und Arbeiten: Pulverbeschichtung, Felgenveredelung, mobiles Sandstrahlen vor Ort und Industrieteile in Niedernberg.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="stil.css">
+</head>
+<body class="bg-zinc-950 text-zinc-100 min-h-screen flex flex-col justify-between">
+
+  <!-- Header / Navigation -->
+  <header class="border-b border-zinc-800 bg-zinc-900/90 backdrop-blur relative z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+      <a href="index.html" aria-label="Pulverfabrik Logo" class="flex items-center group">
+        <img src="bilder/logo.png" alt="Pulverfabrik Logo" class="h-12 md:h-16 w-auto object-contain group-hover:scale-105 transition-transform">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-7 text-xs font-bold uppercase tracking-wider">
+        <a href="index.html" class="text-zinc-400 hover:text-white transition-colors">Startseite</a>
+        <a href="index.html#leistungen" class="text-zinc-400 hover:text-white transition-colors">Leistungen</a>
+        <a href="index.html#anfahrt" class="text-zinc-400 hover:text-white transition-colors">Anfahrt</a>
+        <a href="faq.html" class="text-zinc-400 hover:text-white transition-colors">FAQ</a>
+        <a href="galerie.html" class="text-white border-b-2 border-white pb-1">Galerie</a>
+        <a href="https://www.instagram.com/pulver.fabrik/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="group inline-flex items-center justify-center w-8 h-8 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-600 hover:bg-zinc-800/80 transition-all shadow-sm">
+          <svg class="w-4 h-4 fill-current text-zinc-300 group-hover:text-white transition-colors" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+      </nav>
+
+      <!-- Mobile Header Controls -->
+      <div class="flex items-center gap-2 md:hidden">
+        <a href="https://www.instagram.com/pulver.fabrik/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="group p-2 rounded-xl bg-zinc-900 text-zinc-300 hover:text-white border border-zinc-800 hover:border-zinc-700 shadow-sm">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+        <button id="mobile-menu-btn" class="p-2.5 rounded-xl bg-zinc-900 text-zinc-200 border border-zinc-800" aria-label="Menü öffnen">
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 z-50 bg-zinc-950/95 backdrop-blur-xl p-6 flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between pb-6 border-b border-zinc-800">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-xl icon-box-chrome flex items-center justify-center">
+              <i data-lucide="sparkles" class="w-4 h-4 text-slate-200"></i>
+            </div>
+            <span class="font-extrabold text-white text-base uppercase">PULVERFABRIK</span>
+          </div>
+          <button id="close-mobile-menu" class="p-2 rounded-full bg-zinc-900 text-zinc-400 border border-zinc-800">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <nav class="py-8 flex flex-col gap-4">
+          <a href="index.html" class="text-base font-extrabold text-white uppercase tracking-wider py-2 border-b border-zinc-900">Startseite</a>
+          <a href="index.html#leistungen" class="text-base font-extrabold text-white uppercase tracking-wider py-2 border-b border-zinc-900">Leistungen</a>
+          <a href="index.html#anfahrt" class="text-base font-extrabold text-white uppercase tracking-wider py-2 border-b border-zinc-900">Anfahrt</a>
+          <a href="faq.html" class="text-base font-extrabold text-white uppercase tracking-wider py-2 border-b border-zinc-900">FAQ</a>
+          <a href="galerie.html" class="text-base font-extrabold text-white uppercase tracking-wider py-2 border-b border-zinc-900">Galerie</a>
+          <a href="https://www.instagram.com/pulver.fabrik/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-base font-extrabold text-white uppercase tracking-wider py-2 border-b border-zinc-900 group">
+            <span>Instagram</span>
+            <span class="w-7 h-7 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-300 group-hover:text-white shadow-sm">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </span>
+          </a>
+        </nav>
+      </div>
+
+      <div class="space-y-3 pt-4 border-t border-zinc-800">
+        <a href="index.html#kontakt" class="w-full py-3 rounded-xl font-black text-xs btn-chrome uppercase text-center block">
+          Anfrage senden
+        </a>
+        <a href="tel:+4915150061100" class="w-full py-3 rounded-xl font-bold text-xs bg-zinc-900 text-zinc-200 border border-zinc-800 uppercase text-center block">
+          Telefon: 0151 / 500 611 00
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 flex-1 w-full space-y-10">
+    
+    <!-- Title Section -->
+    <div class="text-center max-w-3xl mx-auto space-y-3">
+      <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md badge-chrome text-xs font-semibold uppercase tracking-wider">
+        <i data-lucide="image" class="w-3.5 h-3.5 text-slate-300"></i>
+        Einblick in unsere Praxis
+      </span>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold uppercase font-heading text-chrome">
+        Galerie & Referenzprojekte
+      </h1>
+      <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
+        Auszug aus unseren Arbeiten: Von Alufelgen über Industrieteile bis hin zu mobilen Strahlarbeiten vor Ort am Standort Niedernberg.
+      </p>
+
+      <!-- Filter Pills -->
+      <div class="pt-4 flex flex-wrap items-center justify-center gap-2">
+        <button data-category="all" class="gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition-all btn-chrome uppercase shadow-md">
+          Alle Arbeiten
+        </button>
+        <button data-category="felgen" class="gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-zinc-900 text-zinc-300 hover:bg-zinc-800 border border-zinc-700">
+          Felgen & KFZ
+        </button>
+        <button data-category="mobiles-sandstrahlen" class="gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-zinc-900 text-zinc-300 hover:bg-zinc-800 border border-zinc-700">
+          Mobiles Sandstrahlen (Holz/Metall)
+        </button>
+        <button data-category="industrie" class="gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-zinc-900 text-zinc-300 hover:bg-zinc-800 border border-zinc-700">
+          Industrie & Serie
+        </button>
+        <button data-category="moebel" class="gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-zinc-900 text-zinc-300 hover:bg-zinc-800 border border-zinc-700">
+          Metallbau & Möbel
+        </button>
+      </div>
+    </div>
+
+    <!-- Image Grid -->
+    <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-4">
+      
+      <!-- Gallery Item 1: Mobiles Sandstrahlen -->
+      <div data-category="mobiles-sandstrahlen" data-title="Mobiles Sandstrahlen: Hausbalken im Wohnraum" data-badge="Mobiles Sandstrahlen" data-desc="Schonendes Freistrahlen von Sichtgebälk und Deckenbalken direkt vor Ort im Wohnbereich ohne Beschädigung der Bausubstanz." class="gallery-item bg-zinc-900/90 rounded-2xl border border-zinc-700/80 overflow-hidden hover:border-slate-400/80 transition-all cursor-pointer group flex flex-col justify-between shadow-xl">
+        <div>
+          <div class="relative h-56 overflow-hidden bg-zinc-950">
+            <img src="./bilder/mobiles-sandstrahlen-wohnraum.jpg" alt="Mobiles Sandstrahlen Hausbalken" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute top-3 left-3">
+              <span class="px-2.5 py-1 rounded-md text-[10px] font-extrabold badge-chrome uppercase tracking-wider shadow-md backdrop-blur-md">
+                Mobiles Sandstrahlen
+              </span>
+            </div>
+            <div class="absolute inset-0 bg-zinc-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl btn-chrome font-black text-xs uppercase shadow-xl">
+                <i data-lucide="eye" class="w-4 h-4 text-zinc-950"></i>
+                Großansicht
+              </span>
+            </div>
+          </div>
+          <div class="p-5 space-y-1.5">
+            <h3 class="font-extrabold text-white text-base group-hover:text-slate-200 transition-colors uppercase">
+              Mobiles Sandstrahlen: Hausbalken im Wohnraum
+            </h3>
+            <p class="text-xs text-zinc-300 leading-relaxed">
+              Schonendes Freistrahlen von Sichtgebälk und Deckenbalken direkt vor Ort im Wohnbereich.
+            </p>
+          </div>
+        </div>
+        <div class="px-5 pb-4 pt-0">
+          <span class="inline-block text-[10px] font-semibold text-zinc-400 bg-zinc-950 border border-zinc-800 px-2.5 py-1 rounded-md">
+            Mobiles Sandstrahlen Holz vor Ort in Wohnräumen
+          </span>
+        </div>
+      </div>
+
+      <!-- Gallery Item 2: Industrie Bauteile -->
+      <div data-category="industrie" data-title="Industrielle Komponenten" data-badge="Industrie & Serie" data-desc="Oberflächenbearbeitung und Vorbehandlung für metallische Bauteile aus Industrie und Maschinenbau." class="gallery-item bg-zinc-900/90 rounded-2xl border border-zinc-700/80 overflow-hidden hover:border-slate-400/80 transition-all cursor-pointer group flex flex-col justify-between shadow-xl">
+        <div>
+          <div class="relative h-56 overflow-hidden bg-zinc-950">
+            <img src="./bilder/industrie-bauteile-gelb.jpg" alt="Industrielle Komponenten" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute top-3 left-3">
+              <span class="px-2.5 py-1 rounded-md text-[10px] font-extrabold badge-chrome uppercase tracking-wider shadow-md backdrop-blur-md">
+                Industrie & Serie
+              </span>
+            </div>
+            <div class="absolute inset-0 bg-zinc-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl btn-chrome font-black text-xs uppercase shadow-xl">
+                <i data-lucide="eye" class="w-4 h-4 text-zinc-950"></i>
+                Großansicht
+              </span>
+            </div>
+          </div>
+          <div class="p-5 space-y-1.5">
+            <h3 class="font-extrabold text-white text-base group-hover:text-slate-200 transition-colors uppercase">
+              Industrielle Komponenten
+            </h3>
+            <p class="text-xs text-zinc-300 leading-relaxed">
+              Oberflächenbearbeitung und Vorbehandlung für metallische Bauteile aus Industrie und Maschinenbau.
+            </p>
+          </div>
+        </div>
+        <div class="px-5 pb-4 pt-0">
+          <span class="inline-block text-[10px] font-semibold text-zinc-400 bg-zinc-950 border border-zinc-800 px-2.5 py-1 rounded-md">
+            Inkl. Korrosionsschutz-Grundierung
+          </span>
+        </div>
+      </div>
+
+      <!-- Gallery Item 3: Glanzschwarze Felgen -->
+      <div data-category="felgen" data-title="Glanzschwarz gepulverte Motorrad- & Speichenfelgen" data-badge="Felgen & KFZ" data-desc="Perfekte Tiefe und Spiegelglanz für Motorrad-Radsätze nach chemischer Entlackung und Fein-Strahlen." class="gallery-item bg-zinc-900/90 rounded-2xl border border-zinc-700/80 overflow-hidden hover:border-slate-400/80 transition-all cursor-pointer group flex flex-col justify-between shadow-xl">
+        <div>
+          <div class="relative h-56 overflow-hidden bg-zinc-950">
+            <img src="./bilder/felgen-schwarz-glanz.jpg" alt="Glanzschwarz gepulverte Felgen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute top-3 left-3">
+              <span class="px-2.5 py-1 rounded-md text-[10px] font-extrabold badge-chrome uppercase tracking-wider shadow-md backdrop-blur-md">
+                Felgen & KFZ
+              </span>
+            </div>
+            <div class="absolute inset-0 bg-zinc-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl btn-chrome font-black text-xs uppercase shadow-xl">
+                <i data-lucide="eye" class="w-4 h-4 text-zinc-950"></i>
+                Großansicht
+              </span>
+            </div>
+          </div>
+          <div class="p-5 space-y-1.5">
+            <h3 class="font-extrabold text-white text-base group-hover:text-slate-200 transition-colors uppercase">
+              Glanzschwarz gepulverte Motorrad- & Speichenfelgen
+            </h3>
+            <p class="text-xs text-zinc-300 leading-relaxed">
+              Perfekte Tiefe und Spiegelglanz für Motorrad-Radsätze nach chemischer Entlackung.
+            </p>
+          </div>
+        </div>
+        <div class="px-5 pb-4 pt-0">
+          <span class="inline-block text-[10px] font-semibold text-zinc-400 bg-zinc-950 border border-zinc-800 px-2.5 py-1 rounded-md">
+            3-Schicht-Aufbau mit Klarlack-Finish
+          </span>
+        </div>
+      </div>
+
+      <!-- Gallery Item 4: Audi Sportfelge Gold -->
+      <div data-category="felgen" data-title="Custom Audi Sportfelge in Gold-Gelb" data-badge="Felgen & Tuning" data-desc="Hochwertige Farbveredelung mit feinem Metallic-Effekt für mehrteilige Performance-Felgen." class="gallery-item bg-zinc-900/90 rounded-2xl border border-zinc-700/80 overflow-hidden hover:border-slate-400/80 transition-all cursor-pointer group flex flex-col justify-between shadow-xl">
+        <div>
+          <div class="relative h-56 overflow-hidden bg-zinc-950">
+            <img src="./bilder/audi-sportfelge-gold.jpg" alt="Audi Sportfelge Gold" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute top-3 left-3">
+              <span class="px-2.5 py-1 rounded-md text-[10px] font-extrabold badge-chrome uppercase tracking-wider shadow-md backdrop-blur-md">
+                Felgen & Tuning
+              </span>
+            </div>
+            <div class="absolute inset-0 bg-zinc-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl btn-chrome font-black text-xs uppercase shadow-xl">
+                <i data-lucide="eye" class="w-4 h-4 text-zinc-950"></i>
+                Großansicht
+              </span>
+            </div>
+          </div>
+          <div class="p-5 space-y-1.5">
+            <h3 class="font-extrabold text-white text-base group-hover:text-slate-200 transition-colors uppercase">
+              Custom Audi Sportfelge in Gold-Gelb
+            </h3>
+            <p class="text-xs text-zinc-300 leading-relaxed">
+              Hochwertige Farbveredelung mit feinem Metallic-Effekt für mehrteilige Performance-Felgen.
+            </p>
+          </div>
+        </div>
+        <div class="px-5 pb-4 pt-0">
+          <span class="inline-block text-[10px] font-semibold text-zinc-400 bg-zinc-950 border border-zinc-800 px-2.5 py-1 rounded-md">
+            Sonderfarbton mit Klarlack
+          </span>
+        </div>
+      </div>
+
+      <!-- Gallery Item 5: Metalltischgestell -->
+      <div data-category="moebel" data-title="Industrie-Metalltischgestell in Seidenmatt-Schwarz" data-badge="Metall & Möbel" data-desc="Massives Schweißkonstruktions-Tischgestell mit gleichmäßiger Pulverbeschichtung für Innen- & Außenbereiche." class="gallery-item bg-zinc-900/90 rounded-2xl border border-zinc-700/80 overflow-hidden hover:border-slate-400/80 transition-all cursor-pointer group flex flex-col justify-between shadow-xl">
+        <div>
+          <div class="relative h-56 overflow-hidden bg-zinc-950">
+            <img src="./bilder/metalltisch-schwarz.jpg" alt="Metalltischgestell Schwarz" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute top-3 left-3">
+              <span class="px-2.5 py-1 rounded-md text-[10px] font-extrabold badge-chrome uppercase tracking-wider shadow-md backdrop-blur-md">
+                Metall & Möbel
+              </span>
+            </div>
+            <div class="absolute inset-0 bg-zinc-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl btn-chrome font-black text-xs uppercase shadow-xl">
+                <i data-lucide="eye" class="w-4 h-4 text-zinc-950"></i>
+                Großansicht
+              </span>
+            </div>
+          </div>
+          <div class="p-5 space-y-1.5">
+            <h3 class="font-extrabold text-white text-base group-hover:text-slate-200 transition-colors uppercase">
+              Industrie-Metalltischgestell in Seidenmatt-Schwarz
+            </h3>
+            <p class="text-xs text-zinc-300 leading-relaxed">
+              Massives Schweißkonstruktions-Tischgestell mit gleichmäßiger Pulverbeschichtung.
+            </p>
+          </div>
+        </div>
+        <div class="px-5 pb-4 pt-0">
+          <span class="inline-block text-[10px] font-semibold text-zinc-400 bg-zinc-950 border border-zinc-800 px-2.5 py-1 rounded-md">
+            Robust für Innen- & Außenbereich
+          </span>
+        </div>
+      </div>
+
+      <!-- Gallery Item 6: Bremssättel & Baugruppen -->
+      <div data-category="felgen" data-title="Bunte Bremssättel & Motorrad-Baugruppen" data-badge="Motorrad & PKW" data-desc="Farbige Akzente in Rot, Blau, Gelb, Grün und Gold für Fahrwerks- & Bremskomponenten mit hitzebeständiger Beschichtung." class="gallery-item bg-zinc-900/90 rounded-2xl border border-zinc-700/80 overflow-hidden hover:border-slate-400/80 transition-all cursor-pointer group flex flex-col justify-between shadow-xl">
+        <div>
+          <div class="relative h-56 overflow-hidden bg-zinc-950">
+            <img src="./bilder/bremssattel-motorrad.jpg" alt="Bremssättel & Baugruppen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute top-3 left-3">
+              <span class="px-2.5 py-1 rounded-md text-[10px] font-extrabold badge-chrome uppercase tracking-wider shadow-md backdrop-blur-md">
+                Motorrad & PKW
+              </span>
+            </div>
+            <div class="absolute inset-0 bg-zinc-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl btn-chrome font-black text-xs uppercase shadow-xl">
+                <i data-lucide="eye" class="w-4 h-4 text-zinc-950"></i>
+                Großansicht
+              </span>
+            </div>
+          </div>
+          <div class="p-5 space-y-1.5">
+            <h3 class="font-extrabold text-white text-base group-hover:text-slate-200 transition-colors uppercase">
+              Bunte Bremssättel & Motorrad-Baugruppen
+            </h3>
+            <p class="text-xs text-zinc-300 leading-relaxed">
+              Farbige Akzente in Rot, Blau, Gelb, Grün und Gold für Fahrwerks- & Bremskomponenten.
+            </p>
+          </div>
+        </div>
+        <div class="px-5 pb-4 pt-0">
+          <span class="inline-block text-[10px] font-semibold text-zinc-400 bg-zinc-950 border border-zinc-800 px-2.5 py-1 rounded-md">
+            Hitzebeständige Pulverbeschichtung
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA Section -->
+    <div class="p-6 sm:p-8 rounded-3xl bg-zinc-900 border border-zinc-800 text-center space-y-4 mt-8">
+      <h3 class="text-xl sm:text-2xl font-extrabold text-white uppercase">Haben Sie ein ähnliches Projekt?</h3>
+      <p class="text-xs sm:text-sm text-zinc-400 max-w-lg mx-auto">
+        Senden Sie uns einfach Fotos und Maße Ihrer Teile für ein kostenloses, unverbindliches Angebot.
+      </p>
+      <div class="flex flex-wrap justify-center gap-3 pt-2">
+        <a href="index.html#kontakt" class="px-6 py-3 rounded-xl font-black text-xs btn-chrome uppercase tracking-wider inline-flex items-center gap-2">
+          <i data-lucide="send" class="w-4 h-4 text-zinc-950"></i>
+          <span>Projekt anfragen</span>
+        </a>
+        <a href="tel:+4915150061100" class="px-6 py-3 rounded-xl font-extrabold text-xs bg-zinc-950 hover:bg-zinc-800 text-white border border-zinc-800 uppercase tracking-wider inline-flex items-center gap-2">
+          <i data-lucide="phone" class="w-4 h-4 text-slate-300"></i>
+          <span>0151 / 500 611 00</span>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Gallery Image Lightbox Modal -->
+  <div id="gallery-modal" class="hidden fixed inset-0 z-50 bg-zinc-950/90 backdrop-blur-md p-4 items-center justify-center">
+    <div class="bg-zinc-900 rounded-3xl max-w-2xl w-full overflow-hidden shadow-2xl border border-zinc-700 relative text-white">
+      <button id="close-gallery-modal" class="absolute top-3 right-3 z-10 p-2 rounded-full bg-zinc-950/80 text-white hover:bg-zinc-950 border border-zinc-700 transition-colors" aria-label="Schließen">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+
+      <div class="relative h-64 sm:h-80 bg-zinc-950">
+        <img id="modal-img" src="" alt="" class="w-full h-full object-contain">
+      </div>
+
+      <div class="p-6 space-y-4">
+        <div class="flex items-center justify-between">
+          <span id="modal-badge" class="px-3 py-1 rounded-md text-xs font-bold badge-chrome uppercase"></span>
+          <span class="text-xs text-zinc-400 font-semibold">Standort Niedernberg</span>
+        </div>
+
+        <h3 id="modal-title" class="text-xl font-black text-white uppercase"></h3>
+        <p id="modal-desc" class="text-xs sm:text-sm text-zinc-300 leading-relaxed"></p>
+
+        <div class="pt-4 border-t border-zinc-800 flex items-center justify-between gap-3">
+          <a id="modal-inquiry-btn" href="index.html#kontakt" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl font-extrabold text-xs btn-chrome uppercase">
+            <i data-lucide="send" class="w-4 h-4 text-zinc-950"></i>
+            Projekt anfragen
+          </a>
+          <a href="tel:+4915150061100" class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-bold text-xs bg-zinc-950 hover:bg-zinc-800 text-zinc-200 border border-zinc-700 uppercase">
+            <i data-lucide="phone" class="w-4 h-4 text-slate-300"></i>
+            Anrufen
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-zinc-950 border-t border-zinc-900 text-zinc-400 text-xs mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p>© 2026 Pulverfabrik Niedernberg – Inhaber Mattia Mazzeo</p>
+      <div class="flex flex-wrap items-center gap-5 text-xs">
+        <a href="index.html" class="hover:text-white transition-colors">Startseite</a>
+        <a href="index.html#leistungen" class="hover:text-white transition-colors">Leistungen</a>
+        <a href="index.html#anfahrt" class="hover:text-white transition-colors">Anfahrt</a>
+        <a href="faq.html" class="hover:text-white transition-colors">FAQ</a>
+        <a href="impressum.html" class="hover:text-white transition-colors">Impressum</a>
+        <a href="datenschutz.html" class="hover:text-white transition-colors">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const closeMobileMenuBtn = document.getElementById('close-mobile-menu');
+
+      const toggleMobileMenu = () => { if (mobileMenu) mobileMenu.classList.toggle('hidden'); };
+      if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+      if (closeMobileMenuBtn) closeMobileMenuBtn.addEventListener('click', toggleMobileMenu);
+
+      document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => { if (mobileMenu) mobileMenu.classList.add('hidden'); });
+      });
+
+      // Filter handling
+      const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const category = btn.dataset.category;
+          filterBtns.forEach(b => {
+            if (b === btn) {
+              b.className = 'gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition-all btn-chrome uppercase shadow-md';
+            } else {
+              b.className = 'gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-zinc-900 text-zinc-300 hover:bg-zinc-800 border border-zinc-700';
+            }
+          });
+
+          galleryItems.forEach(item => {
+            if (category === 'all' || item.dataset.category === category) {
+              item.classList.remove('hidden');
+            } else {
+              item.classList.add('hidden');
+            }
+          });
+        });
+      });
+
+      // Lightbox Modal
+      const galleryModal = document.getElementById('gallery-modal');
+      const closeGalleryModalBtn = document.getElementById('close-gallery-modal');
+      const modalImg = document.getElementById('modal-img');
+      const modalBadge = document.getElementById('modal-badge');
+      const modalTitle = document.getElementById('modal-title');
+      const modalDesc = document.getElementById('modal-desc');
+
+      galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+          const img = item.querySelector('img')?.src;
+          const title = item.dataset.title;
+          const badge = item.dataset.badge;
+          const desc = item.dataset.desc;
+
+          if (galleryModal && modalImg && modalBadge && modalTitle && modalDesc) {
+            modalImg.src = img || '';
+            modalImg.alt = title || '';
+            modalBadge.textContent = badge || '';
+            modalTitle.textContent = title || '';
+            modalDesc.textContent = desc || '';
+            galleryModal.classList.remove('hidden');
+            galleryModal.classList.add('flex');
+          }
+        });
+      });
+
+      if (closeGalleryModalBtn) {
+        closeGalleryModalBtn.addEventListener('click', () => {
+          if (galleryModal) {
+            galleryModal.classList.add('hidden');
+            galleryModal.classList.remove('flex');
+          }
+        });
+      }
+
+      if (galleryModal) {
+        galleryModal.addEventListener('click', (e) => {
+          if (e.target === galleryModal) {
+            galleryModal.classList.add('hidden');
+            galleryModal.classList.remove('flex');
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>
