@@ -1,45 +1,113 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Impressum | Pulverfabrik Niedernberg</title>
+  <meta name="description" content="Impressum der Pulverfabrik Niedernberg – Inhaber Mattia Mazzeo.">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="stil.css">
 </head>
-<body class="bg-zinc-950 text-zinc-100 min-h-screen flex flex-col justify-between">
+<body class="bg-white text-zinc-900 min-h-screen flex flex-col justify-between">
   <!-- Header / Navigation -->
-  <header class="border-b border-zinc-800 bg-zinc-900/80 backdrop-blur relative z-50">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <!-- Pulverfabrik Logo Start -->
-      <a href="index.html" id="pulverfabrik-logo" aria-label="Pulverfabrik Logo" class="flex items-center">
-        <img src="bilder/logo.png" alt="Pulverfabrik Logo" class="h-14 md:h-16 w-auto object-contain">
+  <header class="border-b border-zinc-200 bg-white/95 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex justify-between items-center">
+      <a href="index.html" aria-label="Pulverfabrik Logo" class="flex items-center group">
+        <img src="bilder/logo.png" alt="Pulverfabrik Logo" class="logo-black h-11 md:h-14 w-auto object-contain group-hover:scale-105 transition-transform">
       </a>
-      <!-- Pulverfabrik Logo End -->
-      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-        <a href="index.html" class="hover:text-white text-zinc-400 transition">Startseite</a>
-        <a href="index.html#leistungen" class="hover:text-white text-zinc-400 transition">Leistungen</a>
-        <a href="index.html#anfahrt" class="hover:text-white text-zinc-400 transition">Anfahrt</a>
-        <a href="faq.html" class="hover:text-white text-zinc-400 transition">FAQ</a>
-        <a href="galerie.html" class="hover:text-white text-zinc-400 transition">Galerie</a>
-        <a href="https://www.instagram.com/pulver.fabrik/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="group inline-flex items-center justify-center w-8 h-8 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-600 hover:bg-zinc-800/80 transition-all shadow-sm">
-          <svg class="w-4 h-4 fill-current text-zinc-300 group-hover:text-white transition-colors" viewBox="0 0 24 24">
+      <nav class="hidden md:flex items-center gap-7 text-xs font-bold uppercase tracking-wider">
+        <a href="index.html" class="text-zinc-600 hover:text-black transition-colors">Startseite</a>
+        <a href="index.html#leistungen" class="text-zinc-600 hover:text-black transition-colors">Leistungen</a>
+        <a href="index.html#anfahrt" class="text-zinc-600 hover:text-black transition-colors">Anfahrt</a>
+        <a href="faq.html" class="text-zinc-600 hover:text-black transition-colors">FAQ</a>
+        <a href="galerie.html" class="text-zinc-600 hover:text-black transition-colors">Galerie</a>
+        <a href="https://www.instagram.com/pulver.fabrik/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="group inline-flex items-center justify-center w-8 h-8 rounded-xl bg-zinc-100 border border-zinc-200 hover:border-zinc-400 hover:bg-zinc-200 transition-all shadow-xs">
+          <svg class="w-4 h-4 fill-current text-zinc-700 group-hover:text-black transition-colors" viewBox="0 0 24 24">
             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
           </svg>
         </a>
-        <a href="impressum.html" class="text-white border-b-2 border-white pb-1">Impressum</a>
       </nav>
-      <a href="kontakt.html" class="btn-chrome px-4 py-2 rounded-lg text-sm font-semibold">Angebot Anfordern</a>
+      <!-- Mobile Header Controls -->
+      <div class="flex items-center gap-2 md:hidden">
+        <a href="https://www.instagram.com/pulver.fabrik/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="group p-2 rounded-xl bg-zinc-100 text-zinc-700 hover:text-black border border-zinc-200 hover:border-zinc-300 shadow-xs">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+        <button id="mobile-menu-btn" class="p-2.5 rounded-xl bg-zinc-100 text-zinc-800 border border-zinc-200" aria-label="Menü öffnen">
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden fixed inset-0 z-[100] bg-white p-6 flex flex-col justify-between overflow-y-auto min-h-screen">
+      <div>
+        <div class="flex items-center justify-between pb-6 border-b border-zinc-200">
+          <a href="index.html" class="flex items-center">
+            <img src="bilder/logo.png" alt="Pulverfabrik Logo" class="logo-black h-10 w-auto object-contain">
+          </a>
+          <button id="close-mobile-menu" class="p-2.5 rounded-full bg-zinc-100 text-zinc-700 hover:text-black border border-zinc-200" aria-label="Menü schließen">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <nav class="py-6 flex flex-col gap-2">
+          <a href="index.html" class="text-base font-extrabold text-zinc-900 hover:text-black uppercase tracking-wider py-3 border-b border-zinc-100 flex items-center justify-between">
+            <span>Startseite</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-zinc-400"></i>
+          </a>
+          <a href="index.html#leistungen" class="text-base font-extrabold text-zinc-900 hover:text-black uppercase tracking-wider py-3 border-b border-zinc-100 flex items-center justify-between">
+            <span>Leistungen</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-zinc-400"></i>
+          </a>
+          <a href="index.html#anfahrt" class="text-base font-extrabold text-zinc-900 hover:text-black uppercase tracking-wider py-3 border-b border-zinc-100 flex items-center justify-between">
+            <span>Anfahrt</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-zinc-400"></i>
+          </a>
+          <a href="faq.html" class="text-base font-extrabold text-zinc-900 hover:text-black uppercase tracking-wider py-3 border-b border-zinc-100 flex items-center justify-between">
+            <span>FAQ</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-zinc-400"></i>
+          </a>
+          <a href="galerie.html" class="text-base font-extrabold text-zinc-900 hover:text-black uppercase tracking-wider py-3 border-b border-zinc-100 flex items-center justify-between">
+            <span>Galerie</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-zinc-400"></i>
+          </a>
+          <a href="https://www.instagram.com/pulver.fabrik/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between text-base font-extrabold text-zinc-900 uppercase tracking-wider py-3 border-b border-zinc-100 group">
+            <span class="flex items-center gap-2">
+              <span>Instagram</span>
+            </span>
+            <span class="w-7 h-7 rounded-lg bg-zinc-100 border border-zinc-200 flex items-center justify-center text-zinc-700 group-hover:text-zinc-950 shadow-xs">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </span>
+          </a>
+        </nav>
+      </div>
+
+      <div class="space-y-3 pt-6 border-t border-zinc-200 mt-auto">
+        <a href="index.html#kontakt" class="w-full py-3.5 rounded-xl font-black text-xs btn-chrome uppercase text-center block shadow-sm">
+          Angebot anfragen
+        </a>
+        <a href="tel:+4915150061100" class="w-full py-3 rounded-xl font-bold text-xs bg-zinc-100 text-zinc-900 border border-zinc-300 uppercase text-center block">
+          Telefon: 0151 / 500 611 00
+        </a>
+      </div>
     </div>
   </header>
 
   <!-- Main Content -->
-  <main class="max-w-4xl mx-auto px-4 py-12 flex-1 w-full">
-    <h1 class="text-4xl font-extrabold text-chrome mb-8">Impressum</h1>
+  <main class="max-w-4xl mx-auto px-4 py-12 flex-1 w-full space-y-6">
+    <div class="text-center space-y-2 mb-8">
+      <span class="badge-chrome px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider">Rechtliche Angaben</span>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-chrome uppercase font-heading">Impressum</h1>
+    </div>
 
-    <div class="bg-zinc-900/60 border border-zinc-800 rounded-2xl p-8 space-y-6 text-sm text-zinc-300 leading-relaxed">
+    <div class="bg-zinc-50 border border-zinc-200 rounded-3xl p-6 sm:p-8 space-y-6 text-sm text-zinc-700 leading-relaxed shadow-sm">
       <div>
-        <h2 class="text-lg font-bold text-white mb-2">Angaben gemäß § 5 TMG</h2>
+        <h2 class="text-base font-extrabold text-zinc-900 mb-2 uppercase">Angaben gemäß § 5 TMG</h2>
         <p>
           Pulverfabrik Niedernberg<br>
           Inhaber: Mattia Mazzeo<br>
@@ -48,24 +116,24 @@
         </p>
       </div>
 
-      <div>
-        <h2 class="text-lg font-bold text-white mb-2">Kontakt</h2>
+      <div class="pt-4 border-t border-zinc-200">
+        <h2 class="text-base font-extrabold text-zinc-900 mb-2 uppercase">Kontakt</h2>
         <p>
-          Telefon: 0176 84347715<br>
-          E-Mail: info@pulverfabrik-niedernberg.de
+          Telefon: <a href="tel:+4915150061100" class="text-zinc-900 font-semibold underline">0151 / 500 611 00</a><br>
+          E-Mail: <a href="mailto:mm.pulverfabrik@gmail.com" class="text-zinc-900 font-semibold underline">mm.pulverfabrik@gmail.com</a>
         </p>
       </div>
 
-      <div>
-        <h2 class="text-lg font-bold text-white mb-2">Umsatzsteuer-ID</h2>
+      <div class="pt-4 border-t border-zinc-200">
+        <h2 class="text-base font-extrabold text-zinc-900 mb-2 uppercase">Umsatzsteuer-ID</h2>
         <p>
           Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br>
-          DE 000 000 000 (Auf Anfrage)
+          Auf Anfrage
         </p>
       </div>
 
-      <div>
-        <h2 class="text-lg font-bold text-white mb-2">Verbraucherstreitbeilegung/Universalschlichtungsstelle</h2>
+      <div class="pt-4 border-t border-zinc-200">
+        <h2 class="text-base font-extrabold text-zinc-900 mb-2 uppercase">Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
         <p>
           Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
         </p>
@@ -74,15 +142,51 @@
   </main>
 
   <!-- Footer -->
-  <footer class="border-t border-zinc-800 bg-zinc-950 py-8 text-center text-sm text-zinc-500">
-    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
-      <div>© 2026 Pulverfabrik Niedernberg - Inhaber Mattia Mazzeo</div>
-      <div class="flex gap-4">
-        <a href="impressum.html" class="hover:text-zinc-300">Impressum</a>
-        <a href="datenschutz.html" class="hover:text-zinc-300">Datenschutz</a>
-        <a href="kontakt.html" class="hover:text-zinc-300">Kontakt</a>
+  <footer class="py-8 bg-zinc-100 border-t border-zinc-200 text-zinc-600 text-xs mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p>© 2026 Pulverfabrik Niedernberg – Inhaber Mattia Mazzeo</p>
+      <div class="flex flex-wrap items-center gap-5 text-xs">
+        <a href="index.html" class="hover:text-zinc-950 transition-colors">Startseite</a>
+        <a href="index.html#leistungen" class="hover:text-zinc-950 transition-colors">Leistungen</a>
+        <a href="index.html#anfahrt" class="hover:text-zinc-950 transition-colors">Anfahrt</a>
+        <a href="faq.html" class="hover:text-zinc-950 transition-colors">FAQ</a>
+        <a href="galerie.html" class="hover:text-zinc-950 transition-colors">Galerie</a>
+        <a href="impressum.html" class="text-zinc-950 font-bold">Impressum</a>
+        <a href="datenschutz.html" class="hover:text-zinc-950 transition-colors">Datenschutz</a>
       </div>
     </div>
   </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const closeMobileMenuBtn = document.getElementById('close-mobile-menu');
+
+      const openMobileMenu = () => {
+        if (mobileMenu) {
+          mobileMenu.classList.remove('hidden');
+          document.body.classList.add('overflow-hidden');
+        }
+      };
+
+      const closeMobileMenu = () => {
+        if (mobileMenu) {
+          mobileMenu.classList.add('hidden');
+          document.body.classList.remove('overflow-hidden');
+        }
+      };
+
+      if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileMenu);
+      if (closeMobileMenuBtn) closeMobileMenuBtn.addEventListener('click', closeMobileMenu);
+
+      document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+          closeMobileMenu();
+        });
+      });
+    });
+  </script>
 </body>
 </html>

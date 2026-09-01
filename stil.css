@@ -2,78 +2,92 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #09090b;
-  color: #f4f4f5;
+  background-color: #ffffff;
+  color: #0f172a;
 }
 
 body {
   font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-  background-color: #09090b;
-  color: #f4f4f5;
+  background-color: #ffffff;
+  color: #0f172a;
 }
 
 h1, h2, h3, h4, .font-heading {
   font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
 }
 
-/* Chrome & Silver Metallic Gradients */
+/* Chrome & Metallic Gradients for Light Theme (Deep Gunmetal & Titanium) */
 .text-chrome {
-  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 35%, #94a3b8 70%, #f1f5f9 100%);
+  background: linear-gradient(135deg, #09090b 0%, #334155 45%, #64748b 75%, #0f172a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-silver {
-  background: linear-gradient(180deg, #ffffff 0%, #cbd5e1 50%, #94a3b8 100%);
+  background: linear-gradient(180deg, #0f172a 0%, #334155 50%, #64748b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .bg-chrome-gradient {
-  background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 40%, #94a3b8 80%, #f8fafc 100%);
+  background: linear-gradient(135deg, #09090b 0%, #1e293b 50%, #0f172a 100%);
 }
 
 .btn-chrome {
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 40%, #cbd5e1 80%, #f1f5f9 100%);
-  color: #09090b;
-  border: 1px solid #94a3b8;
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08), inset 0 1px 1px rgba(255, 255, 255, 0.8);
+  background: linear-gradient(135deg, #18181b 0%, #27272a 50%, #09090b 100%);
+  color: #ffffff !important;
+  border: 1px solid #27272a;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.2);
   transition: all 0.2s ease;
 }
 
 .btn-chrome:hover {
-  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 40%, #e2e8f0 80%, #ffffff 100%);
-  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.9);
+  background: linear-gradient(135deg, #27272a 0%, #3f3f46 50%, #18181b 100%);
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.25), inset 0 1px 2px rgba(255, 255, 255, 0.3);
   transform: translateY(-1px);
 }
 
 .badge-chrome {
-  background: linear-gradient(135deg, rgba(226, 232, 240, 0.15) 0%, rgba(148, 163, 184, 0.1) 100%);
-  color: #e2e8f0;
-  border: 1px solid rgba(203, 213, 225, 0.3);
-  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, rgba(241, 245, 249, 0.95) 0%, rgba(226, 232, 240, 0.85) 100%);
+  color: #0f172a;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
 }
 
 .icon-box-chrome {
-  background: linear-gradient(135deg, #27272a 0%, #18181b 50%, #27272a 100%);
-  border: 1px solid #475569;
-  box-shadow: inset 0 1px 1px rgba(248, 250, 252, 0.2), 0 2px 8px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 50%, #e2e8f0 100%);
+  border: 1px solid #cbd5e1;
+  color: #0f172a;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.9), 0 2px 6px rgba(15, 23, 42, 0.06);
 }
 
-/* Custom scrollbar */
+/* Black Logo Filter */
+.logo-black {
+  filter: brightness(0);
+}
+
+/* Custom scrollbar for light theme */
 ::-webkit-scrollbar {
   width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #09090b;
+  background: #f8fafc;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #27272a;
+  background: #cbd5e1;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #475569;
+  background: #94a3b8;
 }
+
+/* Hero background image mask for soft fade */
+.hero-image-mask {
+  mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.5) 45%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.5) 45%, rgba(0, 0, 0, 0) 100%);
+}
+
+
