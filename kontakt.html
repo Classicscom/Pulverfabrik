@@ -159,9 +159,50 @@
           <label class="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1">Ihre Nachricht / Teilebeschreibung</label>
           <textarea id="direct-message" rows="4" required class="w-full bg-white border border-zinc-300 rounded-xl px-3.5 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-zinc-500 shadow-xs" placeholder="Ich interessiere mich für Pulverbeschichtung von..."></textarea>
         </div>
-        <button type="submit" class="btn-chrome w-full py-3 rounded-xl font-black text-xs uppercase shadow-sm">
-          Anfrage Absenden
-        </button>
+        
+        <div class="flex flex-col sm:flex-row items-stretch gap-2.5 pt-1">
+          <button type="submit" class="btn-chrome flex-1 py-3 rounded-xl font-black text-xs uppercase shadow-sm flex items-center justify-center gap-2">
+            <i data-lucide="mail" class="w-4 h-4 text-white"></i>
+            <span>Anfrage per E-Mail</span>
+          </button>
+          <button type="button" id="direct-whatsapp-btn" class="px-4 py-3 rounded-xl font-bold text-xs text-white bg-emerald-600 hover:bg-emerald-700 transition-all flex items-center justify-center gap-1.5 shadow-sm">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Per WhatsApp</span>
+          </button>
+        </div>
+
+        <!-- Fallback Action Card -->
+        <div id="direct-form-success" class="hidden p-4 rounded-2xl bg-zinc-50 border border-zinc-300 text-zinc-900 space-y-3 shadow-xs">
+          <div class="flex items-start gap-2.5">
+            <div class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <i data-lucide="check" class="w-3.5 h-3.5"></i>
+            </div>
+            <div>
+              <h4 class="font-extrabold text-xs text-zinc-900 uppercase">Anfrage vorbereitet!</h4>
+              <p class="text-[11px] text-zinc-600 mt-0.5">Falls Ihre E-Mail-App nicht automatisch gestartet wurde:</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-1">
+            <a id="direct-mailto-link" href="#" class="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl font-bold text-xs bg-zinc-900 hover:bg-black text-white transition-all text-center">
+              <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+              <span>Mail-App öffnen</span>
+            </a>
+            <a id="direct-gmail-link" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl font-bold text-xs bg-white hover:bg-zinc-100 text-zinc-900 border border-zinc-300 transition-all text-center">
+              <i data-lucide="external-link" class="w-3.5 h-3.5 text-red-500"></i>
+              <span>In Gmail (Browser)</span>
+            </a>
+            <a id="direct-whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl font-bold text-xs bg-emerald-600 hover:bg-emerald-700 text-white transition-all text-center">
+              <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+              <span>Per WhatsApp</span>
+            </a>
+          </div>
+
+          <div class="pt-2 border-t border-zinc-200 text-[11px] text-zinc-600 flex flex-wrap items-center justify-between gap-2">
+            <span>Empfänger: <strong class="text-zinc-900 font-mono select-all">mm.pulverfabrik@gmail.com</strong></span>
+            <button type="button" id="direct-copy-text" class="text-zinc-900 font-bold underline hover:text-black">Text kopieren</button>
+          </div>
+        </div>
       </form>
     </div>
   </main>
@@ -214,14 +255,77 @@
       });
 
       const form = document.getElementById('direct-contact-form');
+      const successBox = document.getElementById('direct-form-success');
+      const whatsappBtn = document.getElementById('direct-whatsapp-btn');
+      const mailtoLink = document.getElementById('direct-mailto-link');
+      const gmailLink = document.getElementById('direct-gmail-link');
+      const waLink = document.getElementById('direct-whatsapp-link');
+      const copyTextBtn = document.getElementById('direct-copy-text');
+
+      const prepareLinks = () => {
+        const name = document.getElementById('direct-name').value;
+        const contact = document.getElementById('direct-contact').value;
+        const msg = document.getElementById('direct-message').value;
+        const body = `Hallo Pulverfabrik-Team,\n\nName: ${name}\nKontakt: ${contact}\n\nNachricht:\n${msg}\n\n---\nGesendet über pulver-fabrik.de`;
+        const normalizedBody = body.replace(/\r?\n/g, '\r\n');
+        const subject = 'Kontaktanfrage Pulverfabrik';
+
+        const mailto = `mailto:mm.pulverfabrik@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(normalizedBody)}`;
+        const gmail = `https://mail.google.com/mail/?view=cm&fs=1&to=mm.pulverfabrik@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const wa = `https://wa.me/4915150061100?text=${encodeURIComponent(body)}`;
+
+        if (mailtoLink) mailtoLink.href = mailto;
+        if (gmailLink) gmailLink.href = gmail;
+        if (waLink) waLink.href = wa;
+        if (successBox) {
+          successBox.classList.remove('hidden');
+          if (typeof lucide !== 'undefined') lucide.createIcons();
+        }
+
+        return { mailto, wa, body };
+      };
+
       if (form) {
         form.addEventListener('submit', (e) => {
           e.preventDefault();
-          const name = document.getElementById('direct-name').value;
-          const contact = document.getElementById('direct-contact').value;
-          const msg = document.getElementById('direct-message').value;
-          const body = encodeURIComponent(`Name: ${name}\nKontakt: ${contact}\n\nNachricht:\n${msg}`);
-          window.location.href = `mailto:mm.pulverfabrik@gmail.com?subject=Kontaktanfrage%20Pulverfabrik&body=${body}`;
+          const { mailto } = prepareLinks();
+
+          try {
+            const a = document.createElement('a');
+            a.href = mailto;
+            a.target = '_blank';
+            a.rel = 'noopener noreferrer';
+            document.body.appendChild(a);
+            a.click();
+            setTimeout(() => { if (a.parentNode) a.parentNode.removeChild(a); }, 250);
+          } catch (err) {
+            console.warn(err);
+          }
+
+          try {
+            window.location.href = mailto;
+          } catch (err) {
+            console.warn(err);
+          }
+        });
+      }
+
+      if (whatsappBtn && form) {
+        whatsappBtn.addEventListener('click', () => {
+          if (form.reportValidity && !form.reportValidity()) return;
+          const { wa } = prepareLinks();
+          window.open(wa, '_blank');
+        });
+      }
+
+      if (copyTextBtn) {
+        copyTextBtn.addEventListener('click', () => {
+          const { body } = prepareLinks();
+          navigator.clipboard.writeText(body).then(() => {
+            const orig = copyTextBtn.textContent;
+            copyTextBtn.textContent = 'Kopiert!';
+            setTimeout(() => { copyTextBtn.textContent = orig; }, 2500);
+          });
         });
       }
     });
