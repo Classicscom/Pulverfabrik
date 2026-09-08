@@ -139,11 +139,11 @@
   <section class="pt-24 pb-12 md:pt-32 md:pb-20 relative bg-white border-b border-zinc-200 overflow-hidden">
     
     <!-- Hero Background Image (Ducati Panigale - Pulverfabrik Edition) -->
-    <div class="absolute right-0 top-0 bottom-0 w-full sm:w-3/4 md:w-7/12 lg:w-1/2 pointer-events-none select-none z-0 overflow-hidden flex items-center justify-end">
+    <div class="absolute right-0 top-0 bottom-0 w-full sm:w-3/4 md:w-7/12 lg:w-[52%] pointer-events-none select-none z-0 overflow-hidden flex items-center justify-end">
       <!-- Soft gradient overlay for seamless blending into the white background -->
-      <div class="absolute inset-0 bg-gradient-to-r from-white via-white/75 to-transparent z-10"></div>
-      <div class="absolute inset-0 bg-gradient-to-t from-white/90 via-transparent to-white/40 z-10"></div>
-      <img src="bilder/IMG_2379.jpeg" onerror="this.onerror=null; this.src='bilder/ducati-motorrad.jpg';" alt="Pulverfabrik Referenz Ducati Motorrad" class="hero-image-mask w-full h-full object-cover object-center lg:object-right opacity-25 sm:opacity-30 md:opacity-35 transition-all duration-700">
+      <div class="absolute inset-0 bg-gradient-to-r from-white via-white/80 sm:via-white/60 to-transparent z-10"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-white/90 sm:from-white/80 via-transparent to-white/40 sm:to-white/30 z-10"></div>
+      <img src="bilder/IMG_2379.jpeg" onerror="this.onerror=null; this.src='bilder/ducati-motorrad.jpg';" alt="Pulverfabrik Referenz Ducati Motorrad" class="hero-image-mask w-full h-full object-cover object-center lg:object-right opacity-20 sm:opacity-45 md:opacity-50 transition-all duration-700">
     </div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -170,22 +170,6 @@
         <p class="text-zinc-600 text-sm sm:text-base leading-relaxed max-w-3xl">
           Ihr Fachbetrieb in Niedernberg. Professionelle Pulverbeschichtung für Industrie, Gewerbe und Privat. Inklusive chemischer Entlackung, Sandstrahlen und <strong class="text-zinc-900 font-bold">mobilem Sandstrahlen vor Ort</strong> (z.B. Hausbalken im Wohnraum).
         </p>
-
-        <!-- Feature Bullets / Trust Badges -->
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1 text-xs text-zinc-700 font-semibold max-w-2xl">
-          <div class="p-3 rounded-xl bg-zinc-50 border border-zinc-200 flex items-center gap-2.5 shadow-xs">
-            <i data-lucide="check-circle-2" class="w-4 h-4 text-zinc-900 flex-shrink-0"></i>
-            <span>Industrie & Privat</span>
-          </div>
-          <div class="p-3 rounded-xl bg-zinc-50 border border-zinc-200 flex items-center gap-2.5 shadow-xs">
-            <i data-lucide="check-circle-2" class="w-4 h-4 text-zinc-900 flex-shrink-0"></i>
-            <span>Serien & Einzelteile</span>
-          </div>
-          <div class="p-3 rounded-xl bg-zinc-50 border border-zinc-200 flex items-center gap-2.5 shadow-xs">
-            <i data-lucide="check-circle-2" class="w-4 h-4 text-zinc-900 flex-shrink-0"></i>
-            <span>Hohe Langlebigkeit</span>
-          </div>
-        </div>
 
         <!-- Hero Action Buttons -->
         <div class="flex flex-wrap items-center gap-3 pt-2">
@@ -218,11 +202,6 @@
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-10 space-y-2">
-        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md badge-chrome text-xs font-bold uppercase">
-          <i data-lucide="building-2" class="w-3.5 h-3.5 text-zinc-700"></i>
-          Neuer Standort Niedernberg
-        </div>
-
         <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 uppercase">
           Ofen & Kabine: <span class="text-chrome">Maximale Bauteilgrößen</span>
         </h2>
@@ -478,7 +457,19 @@
                   <div class="w-4 h-4 rounded-full bg-zinc-200 border border-zinc-300 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <i data-lucide="check" class="w-2.5 h-2.5 text-zinc-900"></i>
                   </div>
-                  <span>Rost- und Zunderentfernung</span>
+                  <span>Rost-, Lack- und Zunderentfernung bis zum metallischen Glanz</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <div class="w-4 h-4 rounded-full bg-zinc-200 border border-zinc-300 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <i data-lucide="check" class="w-2.5 h-2.5 text-zinc-900"></i>
+                  </div>
+                  <span>Schonendes chemisches Entlacken für empfindliche Werkstücke</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <div class="w-4 h-4 rounded-full bg-zinc-200 border border-zinc-300 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <i data-lucide="check" class="w-2.5 h-2.5 text-zinc-900"></i>
+                  </div>
+                  <span>Optimale Haftgrundlage für die anschließende Pulverbeschichtung</span>
                 </li>
               </ul>
             </div>
@@ -493,7 +484,7 @@
 
           <!-- Image Box Right -->
           <div class="order-2 md:order-2 md:col-span-5 h-48 sm:h-64 md:h-auto min-h-[200px] md:min-h-0 rounded-2xl overflow-hidden relative border border-zinc-200 shadow-md group">
-            <img src="./bilder/bremssattel-motorrad.jpg" alt="Sandstrahlen & Entlacken Beispiel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="./bilder/bremssattel-motorrad.jpg" alt="Sandstrahlen & Entlacken Beispiel" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
             <div class="absolute bottom-4 left-4 right-4">
               <span class="px-2.5 py-1 rounded-md text-[10px] font-extrabold badge-chrome uppercase tracking-wider backdrop-blur-md">
@@ -571,6 +562,81 @@
 
         </div>
 
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 5. VORHER / NACHHER VERGLEICH             -->
+  <!-- ========================================== -->
+  <section id="vorher-nachher" class="py-14 md:py-20 bg-zinc-50/70 border-b border-zinc-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-10 space-y-2">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md badge-chrome text-xs font-bold uppercase tracking-wider">
+          <i data-lucide="split" class="w-3.5 h-3.5 text-zinc-700"></i>
+          Direkter Qualitätsvergleich
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 uppercase font-heading">
+          Vorher & Nachher: <span class="text-chrome">Perfekte Transformation</span>
+        </h2>
+        <p class="text-zinc-600 text-sm leading-relaxed max-w-2xl mx-auto">
+          Erleben Sie den sichtbaren Unterschied unserer Oberflächenveredelung. Schieben Sie den Regler nach links oder rechts, um den Zustand vor und nach der Pulverbeschichtung direkt zu vergleichen.
+        </p>
+      </div>
+
+      <!-- Comparison Slider Card -->
+      <div class="max-w-3xl mx-auto">
+        <div class="bg-white p-3 sm:p-5 rounded-3xl border border-zinc-200 shadow-sm">
+          
+          <div id="compare-slider" class="relative w-full aspect-square max-w-lg sm:max-w-xl mx-auto overflow-hidden rounded-2xl border border-zinc-200 cursor-ew-resize select-none touch-pan-y bg-white focus:outline-hidden focus:ring-2 focus:ring-zinc-900/20" role="slider" aria-label="Vorher-Nachher Schieberegler" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" tabindex="0">
+            
+            <!-- Before Image (Basis-Ebene unten) -->
+            <img id="beforeImage" 
+                 src="bilder/felge-vorher.png" 
+                 onerror="this.onerror=null; if(this.src.indexOf('5D4BF712')===-1){this.src='bilder/5D4BF712-9B11-4B5D-8651-53C1551E4220.png';}" 
+                 alt="Alufelge vor der Veredelung – Verrostet und oxidiert" 
+                 class="absolute inset-0 w-full h-full object-cover object-center pointer-events-none select-none">
+            
+            <!-- After Image (Ebene oben, per clip-path beschnitten) -->
+            <img id="afterImage" 
+                 src="bilder/felge-nachher.png" 
+                 onerror="this.onerror=null; if(this.src.indexOf('felge-nachher.jpg')===-1){this.src='bilder/felge-nachher.jpg';}else{this.src='bilder/felgen-schwarz-glanz.jpg';}"
+                 alt="Alufelge nach der Pulverbeschichtung – Tiefschwarz Hochglanz" 
+                 class="absolute inset-0 w-full h-full object-cover object-center pointer-events-none select-none"
+                 style="clip-path: inset(0 50% 0 0);">
+
+            <!-- Divider Line & Slider Knob -->
+            <div id="compare-handle" class="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 z-20 pointer-events-none flex items-center justify-center" style="left: 50%;">
+              <!-- Vertical Divider Line -->
+              <div class="w-0.5 h-full bg-white shadow-[0_0_8px_rgba(0,0,0,0.4)]"></div>
+              
+              <!-- Center Knob -->
+              <div class="absolute w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white text-zinc-900 border border-zinc-300 shadow-xl flex items-center justify-center pointer-events-auto cursor-ew-resize transform transition-transform hover:scale-105 active:scale-95">
+                <i data-lucide="chevrons-left-right" class="w-5 h-5 text-zinc-900"></i>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom helper bar -->
+          <div class="mt-3.5 flex items-center justify-between text-xs text-zinc-500 px-1 font-medium">
+            <span class="flex items-center gap-1.5">
+              <i data-lucide="arrow-left" class="w-3.5 h-3.5 text-zinc-400"></i>
+              <span>Vorheriger Zustand</span>
+            </span>
+            <span class="hidden sm:inline-block text-zinc-400 text-[11px]">
+              Regler ziehen oder wischen
+            </span>
+            <span class="flex items-center gap-1.5">
+              <span>Nachherige Veredelung</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-zinc-400"></i>
+            </span>
+          </div>
+
+        </div>
       </div>
 
     </div>
@@ -1073,6 +1139,78 @@ Gesendet über die Website pulver-fabrik.de (Standort Niedernberg)`.trim();
               setTimeout(() => { span.textContent = originalText; }, 2500);
             }
           });
+        });
+      }
+
+      // ==========================================
+      // Vorher / Nachher Comparison Slider Logic
+      // ==========================================
+      const compareSlider = document.getElementById('compare-slider');
+      const afterImage = document.getElementById('afterImage');
+      const compareHandle = document.getElementById('compare-handle');
+
+      if (compareSlider && afterImage && compareHandle) {
+        let isDragging = false;
+
+        const updatePosition = (clientX) => {
+          const rect = compareSlider.getBoundingClientRect();
+          let x = clientX - rect.left;
+          x = Math.max(0, Math.min(x, rect.width));
+          const percent = (x / rect.width) * 100;
+
+          afterImage.style.clipPath = `inset(0 ${100 - percent}% 0 0)`;
+          compareHandle.style.left = `${percent}%`;
+          compareSlider.setAttribute('aria-valuenow', Math.round(percent).toString());
+        };
+
+        // Mouse interactions
+        compareSlider.addEventListener('mousedown', (e) => {
+          isDragging = true;
+          updatePosition(e.clientX);
+        });
+
+        window.addEventListener('mousemove', (e) => {
+          if (isDragging) {
+            updatePosition(e.clientX);
+          }
+        });
+
+        window.addEventListener('mouseup', () => {
+          isDragging = false;
+        });
+
+        // Touch interactions (Mobile & Tablets)
+        compareSlider.addEventListener('touchstart', (e) => {
+          isDragging = true;
+          if (e.touches && e.touches[0]) {
+            updatePosition(e.touches[0].clientX);
+          }
+        }, { passive: true });
+
+        window.addEventListener('touchmove', (e) => {
+          if (isDragging && e.touches && e.touches[0]) {
+            updatePosition(e.touches[0].clientX);
+          }
+        }, { passive: true });
+
+        window.addEventListener('touchend', () => {
+          isDragging = false;
+        });
+
+        // Keyboard navigation (accessibility)
+        compareSlider.addEventListener('keydown', (e) => {
+          const current = parseFloat(compareSlider.getAttribute('aria-valuenow') || '50');
+          if (e.key === 'ArrowLeft') {
+            const next = Math.max(0, current - 5);
+            afterImage.style.clipPath = `inset(0 ${100 - next}% 0 0)`;
+            compareHandle.style.left = `${next}%`;
+            compareSlider.setAttribute('aria-valuenow', next.toString());
+          } else if (e.key === 'ArrowRight') {
+            const next = Math.min(100, current + 5);
+            afterImage.style.clipPath = `inset(0 ${100 - next}% 0 0)`;
+            compareHandle.style.left = `${next}%`;
+            compareSlider.setAttribute('aria-valuenow', next.toString());
+          }
         });
       }
     });
