@@ -46,9 +46,10 @@
         <!-- Pulverfabrik Logo End -->
 
         <!-- Desktop Navigation -->
-        <nav class="hidden md:flex items-center gap-7">
+        <nav class="hidden md:flex items-center gap-6">
           <a href="#leistungen" class="text-xs font-bold text-zinc-300 hover:text-white uppercase tracking-wider transition-colors">Leistungen</a>
-          <a href="#anfahrt" class="text-xs font-bold text-zinc-300 hover:text-white uppercase tracking-wider transition-colors">Anfahrt</a>
+          <a href="preisliste.html" class="text-xs font-bold text-zinc-300 hover:text-white uppercase tracking-wider transition-colors">Preisliste</a>
+          <a href="#bewertungen" class="text-xs font-bold text-zinc-300 hover:text-white uppercase tracking-wider transition-colors">Bewertungen</a>
           <a href="faq.html" class="text-xs font-bold text-zinc-300 hover:text-white uppercase tracking-wider transition-colors">FAQ</a>
           <a href="galerie.html" class="text-xs font-bold text-zinc-300 hover:text-white uppercase tracking-wider transition-colors">Galerie</a>
           <a href="https://www.instagram.com/pulver.fabrik/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="group inline-flex items-center justify-center w-8 h-8 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800 transition-all shadow-xs">
@@ -60,6 +61,9 @@
 
         <!-- Mobile Header Icons -->
         <div class="flex items-center gap-2 md:hidden">
+          <a href="preisliste.html" aria-label="Preisliste" class="inline-flex items-center px-2.5 py-1.5 rounded-xl bg-zinc-900 text-xs font-bold text-zinc-300 hover:text-white border border-zinc-800 shadow-xs uppercase tracking-wider">
+            <span>Preise</span>
+          </a>
           <a href="https://www.instagram.com/pulver.fabrik/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="group p-2 rounded-xl bg-zinc-900 text-zinc-300 hover:text-white border border-zinc-800 hover:border-zinc-700 shadow-xs">
             <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
               <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
@@ -93,12 +97,16 @@
             <span>Startseite</span>
             <i data-lucide="chevron-right" class="w-4 h-4 text-zinc-600"></i>
           </a>
+          <a href="preisliste.html" class="text-base font-extrabold text-white hover:text-zinc-300 uppercase tracking-wider py-3 border-b border-zinc-900 flex items-center justify-between">
+            <span>Preisliste</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-zinc-600"></i>
+          </a>
           <a href="#leistungen" class="text-base font-extrabold text-white hover:text-zinc-300 uppercase tracking-wider py-3 border-b border-zinc-900 flex items-center justify-between">
             <span>Leistungen</span>
             <i data-lucide="chevron-right" class="w-4 h-4 text-zinc-600"></i>
           </a>
-          <a href="#anfahrt" class="text-base font-extrabold text-white hover:text-zinc-300 uppercase tracking-wider py-3 border-b border-zinc-900 flex items-center justify-between">
-            <span>Anfahrt</span>
+          <a href="#bewertungen" class="text-base font-extrabold text-white hover:text-zinc-300 uppercase tracking-wider py-3 border-b border-zinc-900 flex items-center justify-between">
+            <span>Bewertungen</span>
             <i data-lucide="chevron-right" class="w-4 h-4 text-zinc-600"></i>
           </a>
           <a href="faq.html" class="text-base font-extrabold text-white hover:text-zinc-300 uppercase tracking-wider py-3 border-b border-zinc-900 flex items-center justify-between">
@@ -156,10 +164,11 @@
             <i data-lucide="building-2" class="w-3.5 h-3.5 text-zinc-700"></i>
             Neuer Standort Niedernberg
           </span>
-          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-zinc-100 text-zinc-700 border border-zinc-300 text-xs font-bold uppercase">
-            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-zinc-600"></i>
-            Boschstraße 3a, 63843 Niedernberg
-          </span>
+          <a href="https://maps.app.goo.gl/GAafLpWzQBd6oLPd8" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-zinc-100 hover:bg-zinc-200 text-zinc-800 hover:text-black border border-zinc-300 text-xs font-bold uppercase transition-all shadow-2xs group cursor-pointer" title="Adresse in Google Maps öffnen">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-zinc-600 group-hover:text-black transition-colors"></i>
+            <span>Boschstraße 3a, 63843 Niedernberg</span>
+            <i data-lucide="external-link" class="w-3 h-3 text-zinc-400 group-hover:text-zinc-700 transition-colors ml-0.5"></i>
+          </a>
         </div>
 
         <!-- SEO Optimized H1 Heading with Chrome Gradient -->
@@ -168,22 +177,24 @@
         </h1>
 
         <p class="text-zinc-600 text-sm sm:text-base leading-relaxed max-w-3xl">
-          Ihr Fachbetrieb in Niedernberg. Professionelle Pulverbeschichtung für Industrie, Gewerbe und Privat. Inklusive chemischer Entlackung, Sandstrahlen und <strong class="text-zinc-900 font-bold">mobilem Sandstrahlen vor Ort</strong> (z.B. Hausbalken im Wohnraum).
+          Ihr Fachbetrieb in Niedernberg. <strong class="text-zinc-900 font-bold">Professionelle Pulverbeschichtung für Industrie, Gewerbe und Privat.</strong> Inklusive chemischer Entlackung, Sandstrahlen und mobilem Sandstrahlen vor Ort (z.B. Hausbalken im Wohnraum).
         </p>
 
         <!-- Hero Action Buttons -->
-        <div class="flex flex-wrap items-center gap-3 pt-2">
-          <a href="#leistungen" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-black text-xs btn-chrome uppercase tracking-wider">
-            <span>Leistungen ansehen</span>
-            <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-white"></i>
+        <div class="flex flex-wrap items-center gap-2.5 sm:gap-3 pt-2">
+          <a href="https://www.instagram.com/pulver.fabrik/" target="_blank" rel="noopener noreferrer" class="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-3 sm:px-6 py-3 min-h-[46px] rounded-xl font-bold text-xs uppercase tracking-wider bg-zinc-900 hover:bg-black text-white border border-zinc-800 transition-all shadow-xs group whitespace-nowrap">
+            <svg class="w-4 h-4 fill-current text-zinc-200 group-hover:text-white transition-colors flex-shrink-0" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            <span>Instagram</span>
           </a>
 
-          <a href="#kontakt" class="open-contact-modal inline-flex items-center gap-2 px-6 py-3 rounded-xl font-extrabold text-xs bg-zinc-100 hover:bg-zinc-200 text-zinc-900 border border-zinc-300 transition-all uppercase tracking-wider shadow-xs">
+          <a href="#kontakt" class="open-contact-modal flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-3 sm:px-6 py-3 min-h-[46px] rounded-xl font-bold text-xs uppercase tracking-wider bg-zinc-100 hover:bg-zinc-200 text-zinc-900 border border-zinc-300 transition-all shadow-xs whitespace-nowrap">
             <i data-lucide="send" class="w-4 h-4 text-zinc-700"></i>
             <span>Anfrage senden</span>
           </a>
 
-          <a href="tel:+4915150061100" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-extrabold text-xs text-zinc-700 hover:text-zinc-950 transition-colors">
+          <a href="tel:+4915150061100" class="w-full sm:w-auto inline-flex items-center justify-center sm:justify-start gap-2 px-4 py-2.5 sm:py-3 min-h-[42px] sm:min-h-[46px] rounded-xl font-bold text-xs text-zinc-700 hover:text-zinc-950 transition-colors">
             <i data-lucide="phone" class="w-4 h-4 text-zinc-500"></i>
             <span>0151 / 500 611 00</span>
           </a>
@@ -207,7 +218,7 @@
         </h2>
 
         <p class="text-zinc-600 text-xs sm:text-sm">
-          Boschstraße 3a, 63843 Niedernberg. Wir bearbeiten Großteile & Sondergrößen.
+          Wir bearbeiten Großteile & Sondergrößen.
         </p>
       </div>
 
@@ -568,6 +579,645 @@
   </section>
 
   <!-- ========================================== -->
+  <!-- 4b. GOOGLE REVIEWS SECTION (#bewertungen)  -->
+  <!-- ========================================== -->
+  <section id="bewertungen" class="py-14 md:py-20 bg-zinc-50/60 border-b border-zinc-200 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-10 space-y-2">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md badge-chrome text-xs font-bold uppercase tracking-wider">
+          <svg class="w-3.5 h-3.5 flex-shrink-0" viewBox="0 0 24 24">
+            <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17Z"/>
+            <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24Z"/>
+            <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 10.04 0 12s.45 3.82 1.25 5.42l4.03-3.15Z"/>
+            <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98Z"/>
+          </svg>
+          Google Rezensionen
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 uppercase font-heading">
+          Das sagen <span class="text-chrome">unsere Kunden</span>
+        </h2>
+        <div class="w-14 h-1 bg-zinc-900 mx-auto rounded-full mt-2 mb-2"></div>
+        <p class="text-zinc-600 text-sm leading-relaxed max-w-2xl mx-auto">
+          Echtes Kundenfeedback zu Pulverbeschichtung, Sandstrahlen und Oberflächentechnik in Niedernberg.
+        </p>
+      </div>
+
+      <!-- Google Rating Bar (Summary & Action) -->
+      <div class="bg-white rounded-2xl border border-zinc-200 p-4 sm:p-5 mb-8 flex flex-col md:flex-row items-center justify-between gap-4 shadow-xs">
+        <a href="https://maps.app.goo.gl/GAafLpWzQBd6oLPd8" target="_blank" rel="noopener noreferrer" class="flex flex-wrap items-center justify-center sm:justify-start gap-3 sm:gap-4 group cursor-pointer hover:opacity-90 transition-opacity" title="Google Unternehmensprofil öffnen">
+          <!-- Google 'G' & Text -->
+          <div class="flex items-center gap-2">
+            <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24">
+              <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17Z"/>
+              <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24Z"/>
+              <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 10.04 0 12s.45 3.82 1.25 5.42l4.03-3.15Z"/>
+              <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98Z"/>
+            </svg>
+            <span class="font-extrabold text-base tracking-tight text-zinc-900 group-hover:underline">Google</span>
+          </div>
+
+          <span class="hidden sm:inline text-zinc-300">|</span>
+
+          <span class="font-extrabold text-xs sm:text-sm text-zinc-900">Ausgezeichnet</span>
+
+          <!-- 5 Stars -->
+          <div class="flex items-center gap-0.5 text-amber-400">
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+          </div>
+
+          <!-- Score & Count -->
+          <div class="flex items-center gap-1.5 text-xs sm:text-sm">
+            <span class="font-black text-zinc-900">5.0</span>
+            <span class="text-zinc-500 font-semibold">• 18 Google Rezensionen</span>
+          </div>
+        </a>
+
+        <!-- Button: Write review & Navigation Arrows -->
+        <div class="flex items-center gap-3">
+          <a href="https://maps.app.goo.gl/GAafLpWzQBd6oLPd8" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-extrabold bg-zinc-100 hover:bg-zinc-200 text-zinc-900 border border-zinc-300 hover:border-zinc-400 transition-all shadow-2xs group">
+            <i data-lucide="pen-line" class="w-3.5 h-3.5 text-zinc-600 group-hover:text-black transition-colors"></i>
+            <span>Eine Bewertung schreiben</span>
+          </a>
+
+          <!-- Carousel Controls -->
+          <div class="flex items-center gap-1.5">
+            <button id="reviews-prev-btn" class="w-9 h-9 rounded-xl bg-white hover:bg-zinc-100 text-zinc-700 hover:text-black border border-zinc-300 flex items-center justify-center transition-all shadow-2xs cursor-pointer" aria-label="Vorherige Bewertungen">
+              <i data-lucide="chevron-left" class="w-4 h-4"></i>
+            </button>
+            <button id="reviews-next-btn" class="w-9 h-9 rounded-xl bg-white hover:bg-zinc-100 text-zinc-700 hover:text-black border border-zinc-300 flex items-center justify-center transition-all shadow-2xs cursor-pointer" aria-label="Nächste Bewertungen">
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reviews Carousel -->
+      <div id="reviews-slider" class="overflow-x-auto snap-x snap-mandatory flex gap-4 sm:gap-6 scroll-smooth no-scrollbar py-2">
+        
+        <!-- Review Card 1: aprilia V4 Cartel (20" Alufelgen) -->
+        <div class="w-[85vw] sm:w-[360px] lg:w-[380px] flex-shrink-0 snap-start bg-white rounded-2xl border border-zinc-200 p-5 sm:p-6 shadow-xs flex flex-col justify-between hover:border-zinc-300 hover:shadow-md transition-all">
+          <div>
+            <!-- Card Header -->
+            <div class="flex items-center justify-between gap-3 mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-zinc-900 text-white font-black text-xs flex items-center justify-center shadow-xs">
+                  AV
+                </div>
+                <div>
+                  <h4 class="font-extrabold text-sm text-zinc-900">aprilia V4 Cartel</h4>
+                  <span class="text-[11px] text-zinc-500 font-medium">Local Guide · 5 Sterne</span>
+                </div>
+              </div>
+
+              <!-- Google Icon -->
+              <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17Z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24Z"/>
+                <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 10.04 0 12s.45 3.82 1.25 5.42l4.03-3.15Z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98Z"/>
+              </svg>
+            </div>
+
+            <!-- Stars & Verified badge -->
+            <div class="flex items-center gap-1.5 mb-3">
+              <div class="flex items-center gap-0.5 text-amber-400">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <span class="inline-flex items-center text-blue-600" title="Verifizierte Google Rezension">
+                <i data-lucide="badge-check" class="w-4 h-4 fill-blue-50 text-blue-600"></i>
+              </span>
+            </div>
+
+            <!-- Review Text -->
+            <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed review-text line-clamp-4">
+              Bin durch Instagram auf die Pulverfabrik aufmerksam geworden und habe meine Anfrage direkt über eine persönliche Nachricht gestellt, wo ich noch am selben Tag eine Antwort erhielt. Termin vereinbart, Beratung und Angebot erhalten, meine Felgen zum Pulvern in Auftrag gegeben.<br><br>Heute nach ca. 3 Wochen abgeholt, sämtliche Schrammen und Bordsteinschäden sind verschwunden, die 20“ Felgen glänzen in hochglänzend schwarz. Mattia ist ein sehr netter, vertrauenserweckender und freundlicher Mensch, der seinen Beruf zu 100% professionell ausführt. Die Qualität seiner Arbeit ist exzellent, der Kundenservice und die Beratung haben mich überzeugt und ist absolut empfehlenswert. Gerne komme ich wieder, wenn ich etwas pulvern lassen möchte. Danke an die Pulverfabrik für das tolle Ergebnis!
+            </p>
+          </div>
+
+          <!-- Bottom Action -->
+          <div class="mt-4 pt-3 border-t border-zinc-100 flex items-center justify-between">
+            <button class="review-toggle-btn text-xs font-bold text-zinc-500 hover:text-zinc-900 transition-colors flex items-center gap-1 cursor-pointer">
+              <span>Weiterlesen</span>
+              <i data-lucide="chevron-down" class="w-3.5 h-3.5"></i>
+            </button>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-zinc-400">20" Alufelgen</span>
+          </div>
+        </div>
+
+        <!-- Review Card 2: MW IdeenGarage (Stammkunde) -->
+        <div class="w-[85vw] sm:w-[360px] lg:w-[380px] flex-shrink-0 snap-start bg-white rounded-2xl border border-zinc-200 p-5 sm:p-6 shadow-xs flex flex-col justify-between hover:border-zinc-300 hover:shadow-md transition-all">
+          <div>
+            <!-- Card Header -->
+            <div class="flex items-center justify-between gap-3 mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-zinc-800 text-white font-black text-xs flex items-center justify-center shadow-xs">
+                  MW
+                </div>
+                <div>
+                  <h4 class="font-extrabold text-sm text-zinc-900">MW IdeenGarage</h4>
+                  <span class="text-[11px] text-zinc-500 font-medium">Local Guide · vor 10 Monaten</span>
+                </div>
+              </div>
+
+              <!-- Google Icon -->
+              <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17Z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24Z"/>
+                <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 10.04 0 12s.45 3.82 1.25 5.42l4.03-3.15Z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98Z"/>
+              </svg>
+            </div>
+
+            <!-- Stars & Verified badge -->
+            <div class="flex items-center gap-1.5 mb-3">
+              <div class="flex items-center gap-0.5 text-amber-400">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <span class="inline-flex items-center text-blue-600" title="Verifizierte Google Rezension">
+                <i data-lucide="badge-check" class="w-4 h-4 fill-blue-50 text-blue-600"></i>
+              </span>
+            </div>
+
+            <!-- Review Text -->
+            <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed review-text line-clamp-4">
+              Ich bin seit ewig Zeiten Stammkunde. Egal ob Felgen oder Motorradteile oder wie jetzt aktuell ein Fahrradrahmen. Wenn ihr einen sympathischen Jungen Unternehmer mit viel Erfahrung sucht. Kommt vorbei mit euren Wünschen. Fast alle Farben und Beschichtungen sind möglich. Gruß Marco
+            </p>
+          </div>
+
+          <!-- Bottom Action -->
+          <div class="mt-4 pt-3 border-t border-zinc-100 flex items-center justify-between">
+            <button class="review-toggle-btn text-xs font-bold text-zinc-500 hover:text-zinc-900 transition-colors flex items-center gap-1 cursor-pointer">
+              <span>Weiterlesen</span>
+              <i data-lucide="chevron-down" class="w-3.5 h-3.5"></i>
+            </button>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-zinc-400">Stammkunde · Felgen & Rahmen</span>
+          </div>
+        </div>
+
+        <!-- Review Card 3: Andreas Scheer (Reifen Simon Mainaschaff) -->
+        <div class="w-[85vw] sm:w-[360px] lg:w-[380px] flex-shrink-0 snap-start bg-white rounded-2xl border border-zinc-200 p-5 sm:p-6 shadow-xs flex flex-col justify-between hover:border-zinc-300 hover:shadow-md transition-all">
+          <div>
+            <!-- Card Header -->
+            <div class="flex items-center justify-between gap-3 mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-zinc-950 text-white font-black text-xs flex items-center justify-center shadow-xs">
+                  AS
+                </div>
+                <div>
+                  <h4 class="font-extrabold text-sm text-zinc-900">Andreas Scheer</h4>
+                  <span class="text-[11px] text-zinc-500 font-medium">Reifen Simon Mainaschaff · vor 10 Monaten</span>
+                </div>
+              </div>
+
+              <!-- Google Icon -->
+              <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17Z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24Z"/>
+                <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 10.04 0 12s.45 3.82 1.25 5.42l4.03-3.15Z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98Z"/>
+              </svg>
+            </div>
+
+            <!-- Stars & Verified badge -->
+            <div class="flex items-center gap-1.5 mb-3">
+              <div class="flex items-center gap-0.5 text-amber-400">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <span class="inline-flex items-center text-blue-600" title="Verifizierte Google Rezension">
+                <i data-lucide="badge-check" class="w-4 h-4 fill-blue-50 text-blue-600"></i>
+              </span>
+            </div>
+
+            <!-- Review Text -->
+            <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed review-text line-clamp-4">
+              Wir haben einige Felgen dort pulvern bzw. reparieren lassen. Top Preis/Leistung. Nur zu empfehlen.<br>A.Scheer Reifen Simon Mainaschaff
+            </p>
+          </div>
+
+          <!-- Bottom Action -->
+          <div class="mt-4 pt-3 border-t border-zinc-100 flex items-center justify-between">
+            <button class="review-toggle-btn text-xs font-bold text-zinc-500 hover:text-zinc-900 transition-colors flex items-center gap-1 cursor-pointer">
+              <span>Weiterlesen</span>
+              <i data-lucide="chevron-down" class="w-3.5 h-3.5"></i>
+            </button>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-zinc-400">Gewerbe · Felgenreparatur</span>
+          </div>
+        </div>
+
+        <!-- Review Card 4: B. G. (Vespa PX) -->
+        <div class="w-[85vw] sm:w-[360px] lg:w-[380px] flex-shrink-0 snap-start bg-white rounded-2xl border border-zinc-200 p-5 sm:p-6 shadow-xs flex flex-col justify-between hover:border-zinc-300 hover:shadow-md transition-all">
+          <div>
+            <!-- Card Header -->
+            <div class="flex items-center justify-between gap-3 mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-zinc-900 text-white font-black text-xs flex items-center justify-center shadow-xs">
+                  BG
+                </div>
+                <div>
+                  <h4 class="font-extrabold text-sm text-zinc-900">B. G.</h4>
+                  <span class="text-[11px] text-zinc-500 font-medium">vor 2 Jahren</span>
+                </div>
+              </div>
+
+              <!-- Google Icon -->
+              <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17Z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24Z"/>
+                <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 10.04 0 12s.45 3.82 1.25 5.42l4.03-3.15Z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98Z"/>
+              </svg>
+            </div>
+
+            <!-- Stars & Verified badge -->
+            <div class="flex items-center gap-1.5 mb-3">
+              <div class="flex items-center gap-0.5 text-amber-400">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <span class="inline-flex items-center text-blue-600" title="Verifizierte Google Rezension">
+                <i data-lucide="badge-check" class="w-4 h-4 fill-blue-50 text-blue-600"></i>
+              </span>
+            </div>
+
+            <!-- Review Text -->
+            <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed review-text line-clamp-4">
+              Top gepulvert und sehr netter Kontakt. Habe eine komplette Vespa PX pulvern lassen, einfach perfekt! Preis-Leistung unschlagbar... jederzeit wieder :)
+            </p>
+          </div>
+
+          <!-- Bottom Action -->
+          <div class="mt-4 pt-3 border-t border-zinc-100 flex items-center justify-between">
+            <button class="review-toggle-btn text-xs font-bold text-zinc-500 hover:text-zinc-900 transition-colors flex items-center gap-1 cursor-pointer">
+              <span>Weiterlesen</span>
+              <i data-lucide="chevron-down" class="w-3.5 h-3.5"></i>
+            </button>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-zinc-400">Vespa PX Komplett</span>
+          </div>
+        </div>
+
+        <!-- Review Card 5: Franz Winkler (Alufelgen) -->
+        <div class="w-[85vw] sm:w-[360px] lg:w-[380px] flex-shrink-0 snap-start bg-white rounded-2xl border border-zinc-200 p-5 sm:p-6 shadow-xs flex flex-col justify-between hover:border-zinc-300 hover:shadow-md transition-all">
+          <div>
+            <!-- Card Header -->
+            <div class="flex items-center justify-between gap-3 mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-zinc-800 text-white font-black text-xs flex items-center justify-center shadow-xs">
+                  FW
+                </div>
+                <div>
+                  <h4 class="font-extrabold text-sm text-zinc-900">Franz Winkler</h4>
+                  <span class="text-[11px] text-zinc-500 font-medium">vor 3 Jahren</span>
+                </div>
+              </div>
+
+              <!-- Google Icon -->
+              <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17Z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24Z"/>
+                <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 10.04 0 12s.45 3.82 1.25 5.42l4.03-3.15Z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98Z"/>
+              </svg>
+            </div>
+
+            <!-- Stars & Verified badge -->
+            <div class="flex items-center gap-1.5 mb-3">
+              <div class="flex items-center gap-0.5 text-amber-400">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <span class="inline-flex items-center text-blue-600" title="Verifizierte Google Rezension">
+                <i data-lucide="badge-check" class="w-4 h-4 fill-blue-50 text-blue-600"></i>
+              </span>
+            </div>
+
+            <!-- Review Text -->
+            <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed review-text line-clamp-4">
+              Hab meine Alufelgen dort machen lassen. Absolut top die Firma. Kann ich nur jedem 100% empfehlen.
+            </p>
+          </div>
+
+          <!-- Bottom Action -->
+          <div class="mt-4 pt-3 border-t border-zinc-100 flex items-center justify-between">
+            <button class="review-toggle-btn text-xs font-bold text-zinc-500 hover:text-zinc-900 transition-colors flex items-center gap-1 cursor-pointer">
+              <span>Weiterlesen</span>
+              <i data-lucide="chevron-down" class="w-3.5 h-3.5"></i>
+            </button>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-zinc-400">Alufelgen</span>
+          </div>
+        </div>
+
+        <!-- Review Card 6: Mirco Strößner (Edelstahlschrauben & Sonderoptik) -->
+        <div class="w-[85vw] sm:w-[360px] lg:w-[380px] flex-shrink-0 snap-start bg-white rounded-2xl border border-zinc-200 p-5 sm:p-6 shadow-xs flex flex-col justify-between hover:border-zinc-300 hover:shadow-md transition-all">
+          <div>
+            <!-- Card Header -->
+            <div class="flex items-center justify-between gap-3 mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-zinc-900 text-white font-black text-xs flex items-center justify-center shadow-xs">
+                  MS
+                </div>
+                <div>
+                  <h4 class="font-extrabold text-sm text-zinc-900">Mirco Strößner</h4>
+                  <span class="text-[11px] text-zinc-500 font-medium">vor 4 Jahren</span>
+                </div>
+              </div>
+
+              <!-- Google Icon -->
+              <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17Z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24Z"/>
+                <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 10.04 0 12s.45 3.82 1.25 5.42l4.03-3.15Z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98Z"/>
+              </svg>
+            </div>
+
+            <!-- Stars & Verified badge -->
+            <div class="flex items-center gap-1.5 mb-3">
+              <div class="flex items-center gap-0.5 text-amber-400">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <span class="inline-flex items-center text-blue-600" title="Verifizierte Google Rezension">
+                <i data-lucide="badge-check" class="w-4 h-4 fill-blue-50 text-blue-600"></i>
+              </span>
+            </div>
+
+            <!-- Review Text -->
+            <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed review-text line-clamp-4">
+              Super begeistert von der Pulverfabrik! Hatte Edelstahlschrauben, die aus Konzeptgründen ne andere Optik brauchten. Absolut saubere Arbeit und klasse Service.
+            </p>
+          </div>
+
+          <!-- Bottom Action -->
+          <div class="mt-4 pt-3 border-t border-zinc-100 flex items-center justify-between">
+            <button class="review-toggle-btn text-xs font-bold text-zinc-500 hover:text-zinc-900 transition-colors flex items-center gap-1 cursor-pointer">
+              <span>Weiterlesen</span>
+              <i data-lucide="chevron-down" class="w-3.5 h-3.5"></i>
+            </button>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-zinc-400">Edelstahl & Sonderteile</span>
+          </div>
+        </div>
+
+        <!-- Review Card 7: Andrés Carretero Ruiz (Ansaugrohr) -->
+        <div class="w-[85vw] sm:w-[360px] lg:w-[380px] flex-shrink-0 snap-start bg-white rounded-2xl border border-zinc-200 p-5 sm:p-6 shadow-xs flex flex-col justify-between hover:border-zinc-300 hover:shadow-md transition-all">
+          <div>
+            <!-- Card Header -->
+            <div class="flex items-center justify-between gap-3 mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-zinc-800 text-white font-black text-xs flex items-center justify-center shadow-xs">
+                  AC
+                </div>
+                <div>
+                  <h4 class="font-extrabold text-sm text-zinc-900">Andrés Carretero Ruiz</h4>
+                  <span class="text-[11px] text-zinc-500 font-medium">vor 3 Jahren</span>
+                </div>
+              </div>
+
+              <!-- Google Icon -->
+              <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17Z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24Z"/>
+                <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 10.04 0 12s.45 3.82 1.25 5.42l4.03-3.15Z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98Z"/>
+              </svg>
+            </div>
+
+            <!-- Stars & Verified badge -->
+            <div class="flex items-center gap-1.5 mb-3">
+              <div class="flex items-center gap-0.5 text-amber-400">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <span class="inline-flex items-center text-blue-600" title="Verifizierte Google Rezension">
+                <i data-lucide="badge-check" class="w-4 h-4 fill-blue-50 text-blue-600"></i>
+              </span>
+            </div>
+
+            <!-- Review Text -->
+            <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed review-text line-clamp-4">
+              Habe ein Ansaugrohr Pulvern lassen, die Qualität ist Top. Kann Pulverfabrik weiter empfehlen. Sehr netter Kontakt.
+            </p>
+          </div>
+
+          <!-- Bottom Action -->
+          <div class="mt-4 pt-3 border-t border-zinc-100 flex items-center justify-between">
+            <button class="review-toggle-btn text-xs font-bold text-zinc-500 hover:text-zinc-900 transition-colors flex items-center gap-1 cursor-pointer">
+              <span>Weiterlesen</span>
+              <i data-lucide="chevron-down" class="w-3.5 h-3.5"></i>
+            </button>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-zinc-400">Fahrzeugteile · Ansaugrohr</span>
+          </div>
+        </div>
+
+        <!-- Review Card 8: Ralph Schneider (Motorradrahmen) -->
+        <div class="w-[85vw] sm:w-[360px] lg:w-[380px] flex-shrink-0 snap-start bg-white rounded-2xl border border-zinc-200 p-5 sm:p-6 shadow-xs flex flex-col justify-between hover:border-zinc-300 hover:shadow-md transition-all">
+          <div>
+            <!-- Card Header -->
+            <div class="flex items-center justify-between gap-3 mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-zinc-950 text-white font-black text-xs flex items-center justify-center shadow-xs">
+                  RS
+                </div>
+                <div>
+                  <h4 class="font-extrabold text-sm text-zinc-900">Ralph Schneider</h4>
+                  <span class="text-[11px] text-zinc-500 font-medium">vor 4 Jahren</span>
+                </div>
+              </div>
+
+              <!-- Google Icon -->
+              <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17Z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24Z"/>
+                <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 10.04 0 12s.45 3.82 1.25 5.42l4.03-3.15Z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98Z"/>
+              </svg>
+            </div>
+
+            <!-- Stars & Verified badge -->
+            <div class="flex items-center gap-1.5 mb-3">
+              <div class="flex items-center gap-0.5 text-amber-400">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <span class="inline-flex items-center text-blue-600" title="Verifizierte Google Rezension">
+                <i data-lucide="badge-check" class="w-4 h-4 fill-blue-50 text-blue-600"></i>
+              </span>
+            </div>
+
+            <!-- Review Text -->
+            <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed review-text line-clamp-4">
+              Ich habe die Adresse der Pulverfabrik über einen Arbeitskollegen erhalten. Angerufen, Termin ausgemacht, Motorradrahmen, Schwinge und diverse Anbauteile vorbeigebracht. Perfektes Ergebnis!
+            </p>
+          </div>
+
+          <!-- Bottom Action -->
+          <div class="mt-4 pt-3 border-t border-zinc-100 flex items-center justify-between">
+            <button class="review-toggle-btn text-xs font-bold text-zinc-500 hover:text-zinc-900 transition-colors flex items-center gap-1 cursor-pointer">
+              <span>Weiterlesen</span>
+              <i data-lucide="chevron-down" class="w-3.5 h-3.5"></i>
+            </button>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-zinc-400">Motorradrahmen & Schwinge</span>
+          </div>
+        </div>
+
+        <!-- Review Card 9: Alfio Zarbano (Service & Arbeit) -->
+        <div class="w-[85vw] sm:w-[360px] lg:w-[380px] flex-shrink-0 snap-start bg-white rounded-2xl border border-zinc-200 p-5 sm:p-6 shadow-xs flex flex-col justify-between hover:border-zinc-300 hover:shadow-md transition-all">
+          <div>
+            <!-- Card Header -->
+            <div class="flex items-center justify-between gap-3 mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-zinc-900 text-white font-black text-xs flex items-center justify-center shadow-xs">
+                  AZ
+                </div>
+                <div>
+                  <h4 class="font-extrabold text-sm text-zinc-900">Alfio Zarbano</h4>
+                  <span class="text-[11px] text-zinc-500 font-medium">vor 8 Monaten</span>
+                </div>
+              </div>
+
+              <!-- Google Icon -->
+              <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17Z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24Z"/>
+                <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 10.04 0 12s.45 3.82 1.25 5.42l4.03-3.15Z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98Z"/>
+              </svg>
+            </div>
+
+            <!-- Stars & Verified badge -->
+            <div class="flex items-center gap-1.5 mb-3">
+              <div class="flex items-center gap-0.5 text-amber-400">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <span class="inline-flex items-center text-blue-600" title="Verifizierte Google Rezension">
+                <i data-lucide="badge-check" class="w-4 h-4 fill-blue-50 text-blue-600"></i>
+              </span>
+            </div>
+
+            <!-- Review Text -->
+            <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed review-text line-clamp-4">
+              Sehr guter Service , sehr gute Arbeit. Und fairer Preis.
+            </p>
+          </div>
+
+          <!-- Bottom Action -->
+          <div class="mt-4 pt-3 border-t border-zinc-100 flex items-center justify-between">
+            <button class="review-toggle-btn text-xs font-bold text-zinc-500 hover:text-zinc-900 transition-colors flex items-center gap-1 cursor-pointer">
+              <span>Weiterlesen</span>
+              <i data-lucide="chevron-down" class="w-3.5 h-3.5"></i>
+            </button>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-zinc-400">Service & Qualität</span>
+          </div>
+        </div>
+
+        <!-- Review Card 10: S L (Empfehlung) -->
+        <div class="w-[85vw] sm:w-[360px] lg:w-[380px] flex-shrink-0 snap-start bg-white rounded-2xl border border-zinc-200 p-5 sm:p-6 shadow-xs flex flex-col justify-between hover:border-zinc-300 hover:shadow-md transition-all">
+          <div>
+            <!-- Card Header -->
+            <div class="flex items-center justify-between gap-3 mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-zinc-800 text-white font-black text-xs flex items-center justify-center shadow-xs">
+                  SL
+                </div>
+                <div>
+                  <h4 class="font-extrabold text-sm text-zinc-900">S L</h4>
+                  <span class="text-[11px] text-zinc-500 font-medium">vor 2 Jahren</span>
+                </div>
+              </div>
+
+              <!-- Google Icon -->
+              <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17Z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24Z"/>
+                <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 10.04 0 12s.45 3.82 1.25 5.42l4.03-3.15Z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98Z"/>
+              </svg>
+            </div>
+
+            <!-- Stars & Verified badge -->
+            <div class="flex items-center gap-1.5 mb-3">
+              <div class="flex items-center gap-0.5 text-amber-400">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <span class="inline-flex items-center text-blue-600" title="Verifizierte Google Rezension">
+                <i data-lucide="badge-check" class="w-4 h-4 fill-blue-50 text-blue-600"></i>
+              </span>
+            </div>
+
+            <!-- Review Text -->
+            <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed review-text line-clamp-4">
+              Top von A bis Z. Freundlicher Erstkontakt nachdem ich mich auf eine Empfehlung hin gemeldet habe. Sehr zu empfehlen!
+            </p>
+          </div>
+
+          <!-- Bottom Action -->
+          <div class="mt-4 pt-3 border-t border-zinc-100 flex items-center justify-between">
+            <button class="review-toggle-btn text-xs font-bold text-zinc-500 hover:text-zinc-900 transition-colors flex items-center gap-1 cursor-pointer">
+              <span>Weiterlesen</span>
+              <i data-lucide="chevron-down" class="w-3.5 h-3.5"></i>
+            </button>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-zinc-400">Empfehlung & Service</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom CTA: View all reviews on Google Maps -->
+      <div class="mt-8 pt-6 border-t border-zinc-200/80 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-2 text-xs text-zinc-500">
+          <i data-lucide="shield-check" class="w-4 h-4 text-emerald-600"></i>
+          <span>100% echte Kundenmeinungen auf Google Maps verifiziert</span>
+        </div>
+        <a href="https://maps.app.goo.gl/GAafLpWzQBd6oLPd8" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-zinc-800 hover:text-black hover:underline group">
+          <span>Alle Rezensionen auf Google ansehen</span>
+          <i data-lucide="external-link" class="w-3.5 h-3.5 text-zinc-500 group-hover:text-black transition-colors"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
   <!-- 5. VORHER / NACHHER VERGLEICH             -->
   <!-- ========================================== -->
   <section id="vorher-nachher" class="py-14 md:py-20 bg-zinc-50/70 border-b border-zinc-200">
@@ -668,20 +1318,13 @@
         <!-- Address Card & Contact Details -->
         <div class="p-6 flex flex-col justify-between space-y-4 bg-white border border-zinc-200 rounded-2xl shadow-sm">
           <div>
-            <div class="flex items-center justify-between mb-4">
-              <span class="text-xs font-bold uppercase tracking-wider text-zinc-700 flex items-center gap-1.5">
-                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-zinc-500"></i>
-                Neue Adresse
-              </span>
-              <span class="text-xs font-semibold text-zinc-500">63843 Niedernberg</span>
-            </div>
-
             <h3 class="text-xl sm:text-2xl font-extrabold text-zinc-900 uppercase mb-1">
               Pulverfabrik – Oberflächentechnik & Mobiles Sandstrahlen
             </h3>
 
-            <div class="text-base font-bold text-zinc-800 mb-4">
-              Boschstraße 3a, 63843 Niedernberg
+            <div class="text-base font-bold text-zinc-800 mb-4 flex items-center gap-1.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-zinc-600 flex-shrink-0"></i>
+              <span>Boschstraße 3a, 63843 Niedernberg</span>
             </div>
 
             <!-- Address details grid -->
@@ -712,7 +1355,7 @@
               <div class="p-3 rounded-lg bg-zinc-50 border border-zinc-200">
                 <span class="text-[10px] font-bold text-zinc-500 block mb-0.5">Öffnungszeiten</span>
                 <p class="font-medium text-zinc-700 text-xs">
-                  Mo. - Fr.: 08:00 - 17:00 Uhr (Termine nach Vereinbarung)
+                  Mo. - Fr.: 08:00 - 16:00 Uhr (Anfahrt bitte vorher anmelden)
                 </p>
               </div>
             </div>
@@ -725,7 +1368,7 @@
               <span>Adresse kopieren</span>
             </button>
 
-            <a href="https://www.google.com/maps/search/?api=1&query=Pulverfabrik+Boschstra%C3%9Fe+3a+63843+Niedernberg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg font-bold text-xs bg-zinc-900 text-white hover:bg-black transition-all shadow-xs">
+            <a href="https://maps.app.goo.gl/GAafLpWzQBd6oLPd8" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg font-bold text-xs bg-zinc-900 text-white hover:bg-black transition-all shadow-xs">
               <i data-lucide="navigation" class="w-3.5 h-3.5"></i>
               <span>In Google Maps öffnen</span>
               <i data-lucide="external-link" class="w-3 h-3 opacity-70"></i>
@@ -795,20 +1438,50 @@
               <input type="text" name="dimensions" placeholder="z.B. 4 Felgen 19 Zoll" class="w-full px-3.5 py-2.5 rounded-xl border border-zinc-300 bg-white text-zinc-900 placeholder-zinc-400 text-xs focus:outline-none focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900">
             </div>
             <div>
-              <div class="flex items-center justify-between mb-1">
-                <label class="block text-xs font-bold uppercase text-zinc-700">Wunsch-Farbe / Finish</label>
-                <a href="https://www.ral-farben.de/alle-ral-farben" target="_blank" rel="noopener noreferrer" class="text-[11px] font-semibold text-zinc-600 hover:text-black hover:underline inline-flex items-center gap-1">
-                  <span>RAL-Katalog</span>
-                  <i data-lucide="external-link" class="w-3 h-3 text-zinc-400"></i>
-                </a>
-              </div>
-              <input type="text" name="color" placeholder="z.B. Schwarz Glanz, RAL 9005" class="w-full px-3.5 py-2.5 rounded-xl border border-zinc-300 bg-white text-zinc-900 placeholder-zinc-400 text-xs focus:outline-none focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900">
+              <label class="block text-xs font-bold uppercase text-zinc-700 mb-1">Wunsch-Farbe / Finish <span class="text-[10px] font-semibold text-zinc-500 normal-case">(nur RAL Classic)</span></label>
+              <input type="text" name="color" placeholder="z.B. RAL 9005 Tiefschwarz (nur RAL Classic)" class="w-full px-3.5 py-2.5 rounded-xl border border-zinc-300 bg-white text-zinc-900 placeholder-zinc-400 text-xs focus:outline-none focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900">
+            </div>
+          </div>
+
+          <!-- Aktueller Zustand (Mehrfachauswahl) -->
+          <div>
+            <div class="flex items-center justify-between mb-1.5">
+              <label class="block text-xs font-bold uppercase text-zinc-700">
+                Aktueller Zustand der Teile
+              </label>
+              <span class="text-[11px] text-zinc-500 font-medium">Mehrfachauswahl möglich</span>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+              <label class="condition-chip relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl border cursor-pointer select-none text-xs font-semibold">
+                <input type="checkbox" name="condition" value="Gepulvert" id="main-cond-gepulvert" class="w-4 h-4 rounded border-zinc-300 text-zinc-900 focus:ring-zinc-800 accent-zinc-900 cursor-pointer">
+                <span>Gepulvert</span>
+              </label>
+              <label class="condition-chip relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl border cursor-pointer select-none text-xs font-semibold">
+                <input type="checkbox" name="condition" value="Lackiert" id="main-cond-lackiert" class="w-4 h-4 rounded border-zinc-300 text-zinc-900 focus:ring-zinc-800 accent-zinc-900 cursor-pointer">
+                <span>Lackiert</span>
+              </label>
+              <label class="condition-chip relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl border cursor-pointer select-none text-xs font-semibold">
+                <input type="checkbox" name="condition" value="Blank" id="main-cond-blank" class="w-4 h-4 rounded border-zinc-300 text-zinc-900 focus:ring-zinc-800 accent-zinc-900 cursor-pointer">
+                <span>Blank</span>
+              </label>
+              <label class="condition-chip relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl border cursor-pointer select-none text-xs font-semibold">
+                <input type="checkbox" name="condition" value="Verrostet" id="main-cond-verrostet" class="w-4 h-4 rounded border-zinc-300 text-zinc-900 focus:ring-zinc-800 accent-zinc-900 cursor-pointer">
+                <span>Verrostet</span>
+              </label>
+              <label class="condition-chip relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl border cursor-pointer select-none text-xs font-semibold">
+                <input type="checkbox" name="condition" value="Macken" id="main-cond-macken" class="w-4 h-4 rounded border-zinc-300 text-zinc-900 focus:ring-zinc-800 accent-zinc-900 cursor-pointer">
+                <span>Macken</span>
+              </label>
+              <label class="condition-chip relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl border cursor-pointer select-none text-xs font-semibold">
+                <input type="checkbox" name="condition" value="Kratzer" id="main-cond-kratzer" class="w-4 h-4 rounded border-zinc-300 text-zinc-900 focus:ring-zinc-800 accent-zinc-900 cursor-pointer">
+                <span>Kratzer</span>
+              </label>
             </div>
           </div>
 
           <div>
             <label class="block text-xs font-bold uppercase text-zinc-700 mb-1">Nachricht / Anmerkungen</label>
-            <textarea name="message" rows="2" placeholder="Material, Zustand (lackiert, verrostet) oder Wünsche..." class="w-full px-3.5 py-2.5 rounded-xl border border-zinc-300 bg-white text-zinc-900 placeholder-zinc-400 text-xs focus:outline-none focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900"></textarea>
+            <textarea name="message" rows="2" placeholder="Zusätzliche Details, Vorarbeiten oder besondere Wünsche..." class="w-full px-3.5 py-2.5 rounded-xl border border-zinc-300 bg-white text-zinc-900 placeholder-zinc-400 text-xs focus:outline-none focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900"></textarea>
           </div>
 
           <!-- RAL Color Guide Callout -->
@@ -819,7 +1492,7 @@
               </div>
               <div class="text-xs">
                 <span class="font-extrabold text-zinc-900 block">Noch keine Farbe im Sinn?</span>
-                <span class="text-zinc-500 text-[11px]">Hier können Sie direkt durch den offiziellen RAL-Farbkatalog blättern.</span>
+                <span class="text-zinc-600 text-[11px] block mt-0.5">Über den Link nebenan gelangen Sie zum offiziellen Farbkatalog. Wir bieten ausschließlich <strong>RAL Classic</strong> an – im Suchfilter einfach auswählbar.</span>
               </div>
             </div>
             <a href="https://www.ral-farben.de/alle-ral-farben" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-zinc-100 hover:bg-zinc-200 text-zinc-800 border border-zinc-300 transition-all flex-shrink-0">
@@ -837,11 +1510,6 @@
             <button type="button" id="main-whatsapp-btn" class="inline-flex items-center justify-center gap-1.5 px-4 py-3 rounded-xl font-bold text-xs text-white bg-emerald-600 hover:bg-emerald-700 transition-all">
               <i data-lucide="message-circle" class="w-4 h-4"></i>
               <span>Per WhatsApp</span>
-            </button>
-
-            <button type="button" id="main-copy-btn" class="inline-flex items-center justify-center gap-1.5 px-4 py-3 rounded-xl font-bold text-xs text-zinc-800 bg-zinc-100 hover:bg-zinc-200 border border-zinc-300 transition-all">
-              <i data-lucide="copy" class="w-4 h-4 text-zinc-600"></i>
-              <span class="copy-btn-text">Text kopieren</span>
             </button>
           </div>
 
@@ -900,6 +1568,7 @@
       
       <div class="flex flex-wrap items-center justify-center gap-6 text-xs pb-6 border-b border-zinc-200">
         <a href="#leistungen" class="hover:text-zinc-950 transition-colors">Leistungen</a>
+        <a href="preisliste.html" class="hover:text-zinc-950 transition-colors font-extrabold text-zinc-900 underline">Preisliste</a>
         <a href="#anfahrt" class="hover:text-zinc-950 transition-colors">Anfahrt & Standort</a>
         <a href="faq.html" class="hover:text-zinc-950 transition-colors">FAQ</a>
         <a href="galerie.html" class="hover:text-zinc-950 transition-colors">Galerie</a>
@@ -977,20 +1646,50 @@
               <input type="text" name="dimensions" placeholder="z.B. 4 Felgen 19 Zoll" class="w-full px-3.5 py-2.5 rounded-xl border border-zinc-300 bg-white text-zinc-900 placeholder-zinc-400 text-xs focus:outline-none focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900">
             </div>
             <div>
-              <div class="flex items-center justify-between mb-1">
-                <label class="block text-xs font-bold uppercase text-zinc-700">Wunsch-Farbe / Finish</label>
-                <a href="https://www.ral-farben.de/alle-ral-farben" target="_blank" rel="noopener noreferrer" class="text-[11px] font-semibold text-zinc-600 hover:text-black hover:underline inline-flex items-center gap-1">
-                  <span>RAL-Katalog</span>
-                  <i data-lucide="external-link" class="w-3 h-3 text-zinc-400"></i>
-                </a>
-              </div>
-              <input type="text" name="color" placeholder="z.B. Schwarz Glanz, RAL 9005" class="w-full px-3.5 py-2.5 rounded-xl border border-zinc-300 bg-white text-zinc-900 placeholder-zinc-400 text-xs focus:outline-none focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900">
+              <label class="block text-xs font-bold uppercase text-zinc-700 mb-1">Wunsch-Farbe / Finish <span class="text-[10px] font-semibold text-zinc-500 normal-case">(nur RAL Classic)</span></label>
+              <input type="text" name="color" placeholder="z.B. RAL 9005 Tiefschwarz (nur RAL Classic)" class="w-full px-3.5 py-2.5 rounded-xl border border-zinc-300 bg-white text-zinc-900 placeholder-zinc-400 text-xs focus:outline-none focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900">
+            </div>
+          </div>
+
+          <!-- Aktueller Zustand (Mehrfachauswahl) -->
+          <div>
+            <div class="flex items-center justify-between mb-1.5">
+              <label class="block text-xs font-bold uppercase text-zinc-700">
+                Aktueller Zustand der Teile
+              </label>
+              <span class="text-[11px] text-zinc-500 font-medium">Mehrfachauswahl möglich</span>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+              <label class="condition-chip relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl border cursor-pointer select-none text-xs font-semibold">
+                <input type="checkbox" name="condition" value="Gepulvert" id="modal-cond-gepulvert" class="w-4 h-4 rounded border-zinc-300 text-zinc-900 focus:ring-zinc-800 accent-zinc-900 cursor-pointer">
+                <span>Gepulvert</span>
+              </label>
+              <label class="condition-chip relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl border cursor-pointer select-none text-xs font-semibold">
+                <input type="checkbox" name="condition" value="Lackiert" id="modal-cond-lackiert" class="w-4 h-4 rounded border-zinc-300 text-zinc-900 focus:ring-zinc-800 accent-zinc-900 cursor-pointer">
+                <span>Lackiert</span>
+              </label>
+              <label class="condition-chip relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl border cursor-pointer select-none text-xs font-semibold">
+                <input type="checkbox" name="condition" value="Blank" id="modal-cond-blank" class="w-4 h-4 rounded border-zinc-300 text-zinc-900 focus:ring-zinc-800 accent-zinc-900 cursor-pointer">
+                <span>Blank</span>
+              </label>
+              <label class="condition-chip relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl border cursor-pointer select-none text-xs font-semibold">
+                <input type="checkbox" name="condition" value="Verrostet" id="modal-cond-verrostet" class="w-4 h-4 rounded border-zinc-300 text-zinc-900 focus:ring-zinc-800 accent-zinc-900 cursor-pointer">
+                <span>Verrostet</span>
+              </label>
+              <label class="condition-chip relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl border cursor-pointer select-none text-xs font-semibold">
+                <input type="checkbox" name="condition" value="Macken" id="modal-cond-macken" class="w-4 h-4 rounded border-zinc-300 text-zinc-900 focus:ring-zinc-800 accent-zinc-900 cursor-pointer">
+                <span>Macken</span>
+              </label>
+              <label class="condition-chip relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl border cursor-pointer select-none text-xs font-semibold">
+                <input type="checkbox" name="condition" value="Kratzer" id="modal-cond-kratzer" class="w-4 h-4 rounded border-zinc-300 text-zinc-900 focus:ring-zinc-800 accent-zinc-900 cursor-pointer">
+                <span>Kratzer</span>
+              </label>
             </div>
           </div>
 
           <div>
             <label class="block text-xs font-bold uppercase text-zinc-700 mb-1">Nachricht / Anmerkungen</label>
-            <textarea id="modal-message-input" name="message" rows="2" placeholder="Material, Zustand (lackiert, verrostet) oder Wünsche..." class="w-full px-3.5 py-2.5 rounded-xl border border-zinc-300 bg-white text-zinc-900 placeholder-zinc-400 text-xs focus:outline-none focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900"></textarea>
+            <textarea id="modal-message-input" name="message" rows="2" placeholder="Zusätzliche Details, Vorarbeiten oder besondere Wünsche..." class="w-full px-3.5 py-2.5 rounded-xl border border-zinc-300 bg-white text-zinc-900 placeholder-zinc-400 text-xs focus:outline-none focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900"></textarea>
           </div>
 
           <!-- RAL Color Guide Callout -->
@@ -1001,7 +1700,7 @@
               </div>
               <div class="text-xs">
                 <span class="font-extrabold text-zinc-900 block">Noch keine Farbe im Sinn?</span>
-                <span class="text-zinc-500 text-[11px]">Hier können Sie direkt durch den offiziellen RAL-Farbkatalog blättern.</span>
+                <span class="text-zinc-600 text-[11px] block mt-0.5">Über den Link nebenan gelangen Sie zum offiziellen Farbkatalog. Wir bieten ausschließlich <strong>RAL Classic</strong> an – im Suchfilter einfach auswählbar.</span>
               </div>
             </div>
             <a href="https://www.ral-farben.de/alle-ral-farben" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-white hover:bg-zinc-100 text-zinc-800 border border-zinc-300 transition-all flex-shrink-0">
@@ -1182,6 +1881,10 @@
         const color = formElement.querySelector('[name="color"]')?.value || 'RAL Wunschfarbe';
         const message = formElement.querySelector('[name="message"]')?.value || 'Keine zusätzlichen Anmerkungen.';
 
+        const selectedConditions = Array.from(formElement.querySelectorAll('input[name="condition"]:checked'))
+          .map(cb => cb.value);
+        const conditionText = selectedConditions.length > 0 ? selectedConditions.join(', ') : 'Nicht angegeben / Unbehandelt';
+
         const bodyText = `Hallo Pulverfabrik-Team,
 
 hiermit frage ich unverbindlich folgende Arbeiten an:
@@ -1193,6 +1896,7 @@ Telefon: ${phone}
 Anfrage-Details:
 ----------------------------------
 - Art der Teile: ${partType}
+- Aktueller Zustand: ${conditionText}
 - Ca. Maße / Stückzahl: ${dimensions}
 - Wunsch-Farbe / Finish: ${color}
 
@@ -1202,7 +1906,7 @@ ${message}
 ---
 Gesendet über die Website pulver-fabrik.de (Standort Niedernberg)`.trim();
 
-        return { name, email, phone, partType, bodyText };
+        return { name, email, phone, partType, conditionText, bodyText };
       };
 
       const setupForm = (formId, submitMsgId, copyBtnId, whatsappBtnId, prefix) => {
@@ -1304,6 +2008,22 @@ Gesendet über die Website pulver-fabrik.de (Standort Niedernberg)`.trim();
       setupForm('main-contact-form', 'main-form-success', 'main-copy-btn', 'main-whatsapp-btn', 'main');
       setupForm('modal-contact-form', 'modal-form-success', 'modal-copy-btn', 'modal-whatsapp-btn', 'modal');
 
+      // Condition Chips State Synchronization
+      document.querySelectorAll('.condition-chip input[type="checkbox"]').forEach(checkbox => {
+        const updateChip = () => {
+          const parent = checkbox.closest('.condition-chip');
+          if (parent) {
+            if (checkbox.checked) {
+              parent.classList.add('is-active');
+            } else {
+              parent.classList.remove('is-active');
+            }
+          }
+        };
+        checkbox.addEventListener('change', updateChip);
+        updateChip();
+      });
+
       const copyAddressBtn = document.getElementById('copy-address-btn');
       if (copyAddressBtn) {
         copyAddressBtn.addEventListener('click', () => {
@@ -1389,6 +2109,54 @@ Gesendet über die Website pulver-fabrik.de (Standort Niedernberg)`.trim();
           }
         });
       }
+
+      // ==========================================
+      // Google Reviews Carousel & Read More Toggle
+      // ==========================================
+      const reviewsSlider = document.getElementById('reviews-slider');
+      const reviewsPrevBtn = document.getElementById('reviews-prev-btn');
+      const reviewsNextBtn = document.getElementById('reviews-next-btn');
+
+      if (reviewsSlider && reviewsPrevBtn && reviewsNextBtn) {
+        const getScrollStep = () => {
+          const firstCard = reviewsSlider.querySelector('.snap-start');
+          return firstCard ? firstCard.getBoundingClientRect().width + 20 : 360;
+        };
+
+        reviewsPrevBtn.addEventListener('click', () => {
+          reviewsSlider.scrollBy({ left: -getScrollStep(), behavior: 'smooth' });
+        });
+
+        reviewsNextBtn.addEventListener('click', () => {
+          reviewsSlider.scrollBy({ left: getScrollStep(), behavior: 'smooth' });
+        });
+      }
+
+      // Read more ("Weiterlesen") buttons
+      document.querySelectorAll('.review-toggle-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const card = e.currentTarget.closest('.snap-start');
+          if (!card) return;
+          const textEl = card.querySelector('.review-text');
+          const span = e.currentTarget.querySelector('span');
+          const icon = e.currentTarget.querySelector('i');
+          if (!textEl || !span) return;
+
+          const isClamped = textEl.classList.contains('line-clamp-4');
+          if (isClamped) {
+            textEl.classList.remove('line-clamp-4');
+            span.textContent = 'Weniger anzeigen';
+            if (icon) icon.setAttribute('data-lucide', 'chevron-up');
+          } else {
+            textEl.classList.add('line-clamp-4');
+            span.textContent = 'Weiterlesen';
+            if (icon) icon.setAttribute('data-lucide', 'chevron-down');
+          }
+          if (window.lucide) {
+            window.lucide.createIcons();
+          }
+        });
+      });
     });
   </script>
 </body>

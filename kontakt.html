@@ -18,9 +18,7 @@
           <img src="bilder/logo.png" alt="Pulverfabrik Logo" class="logo-white h-12 md:h-14 w-auto object-contain group-hover:scale-105 transition-transform">
         </a>
         <nav class="hidden md:flex items-center gap-7">
-          <a href="index.html" class="text-xs font-bold text-zinc-300 hover:text-white uppercase tracking-wider transition-colors">Startseite</a>
           <a href="index.html#leistungen" class="text-xs font-bold text-zinc-300 hover:text-white uppercase tracking-wider transition-colors">Leistungen</a>
-          <a href="index.html#anfahrt" class="text-xs font-bold text-zinc-300 hover:text-white uppercase tracking-wider transition-colors">Anfahrt</a>
           <a href="faq.html" class="text-xs font-bold text-zinc-300 hover:text-white uppercase tracking-wider transition-colors">FAQ</a>
           <a href="galerie.html" class="text-xs font-bold text-zinc-300 hover:text-white uppercase tracking-wider transition-colors">Galerie</a>
           <a href="https://www.instagram.com/pulver.fabrik/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="group inline-flex items-center justify-center w-8 h-8 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800 transition-all shadow-xs">
@@ -65,10 +63,6 @@
           </a>
           <a href="index.html#leistungen" class="text-base font-extrabold text-white hover:text-zinc-300 uppercase tracking-wider py-3 border-b border-zinc-900 flex items-center justify-between">
             <span>Leistungen</span>
-            <i data-lucide="chevron-right" class="w-4 h-4 text-zinc-600"></i>
-          </a>
-          <a href="index.html#anfahrt" class="text-base font-extrabold text-white hover:text-zinc-300 uppercase tracking-wider py-3 border-b border-zinc-900 flex items-center justify-between">
-            <span>Anfahrt</span>
             <i data-lucide="chevron-right" class="w-4 h-4 text-zinc-600"></i>
           </a>
           <a href="faq.html" class="text-base font-extrabold text-white hover:text-zinc-300 uppercase tracking-wider py-3 border-b border-zinc-900 flex items-center justify-between">
@@ -159,6 +153,40 @@
         <div>
           <label class="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1">E-Mail / Telefon</label>
           <input type="text" id="direct-contact" required class="w-full bg-white border border-zinc-300 rounded-xl px-3.5 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-zinc-500 shadow-xs" placeholder="max@beispiel.de oder 0151...">
+        </div>
+        <div>
+          <div class="flex items-center justify-between mb-1.5">
+            <label class="block text-xs font-bold uppercase tracking-wider text-zinc-700">
+              Aktueller Zustand der Teile
+            </label>
+            <span class="text-[11px] text-zinc-500 font-medium">Mehrfachauswahl möglich</span>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+            <label class="condition-chip relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl border cursor-pointer select-none text-xs font-semibold">
+              <input type="checkbox" name="condition" value="Gepulvert" id="direct-cond-gepulvert" class="w-4 h-4 rounded border-zinc-300 text-zinc-900 focus:ring-zinc-800 accent-zinc-900 cursor-pointer">
+              <span>Gepulvert</span>
+            </label>
+            <label class="condition-chip relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl border cursor-pointer select-none text-xs font-semibold">
+              <input type="checkbox" name="condition" value="Lackiert" id="direct-cond-lackiert" class="w-4 h-4 rounded border-zinc-300 text-zinc-900 focus:ring-zinc-800 accent-zinc-900 cursor-pointer">
+              <span>Lackiert</span>
+            </label>
+            <label class="condition-chip relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl border cursor-pointer select-none text-xs font-semibold">
+              <input type="checkbox" name="condition" value="Blank" id="direct-cond-blank" class="w-4 h-4 rounded border-zinc-300 text-zinc-900 focus:ring-zinc-800 accent-zinc-900 cursor-pointer">
+              <span>Blank</span>
+            </label>
+            <label class="condition-chip relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl border cursor-pointer select-none text-xs font-semibold">
+              <input type="checkbox" name="condition" value="Verrostet" id="direct-cond-verrostet" class="w-4 h-4 rounded border-zinc-300 text-zinc-900 focus:ring-zinc-800 accent-zinc-900 cursor-pointer">
+              <span>Verrostet</span>
+            </label>
+            <label class="condition-chip relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl border cursor-pointer select-none text-xs font-semibold">
+              <input type="checkbox" name="condition" value="Macken" id="direct-cond-macken" class="w-4 h-4 rounded border-zinc-300 text-zinc-900 focus:ring-zinc-800 accent-zinc-900 cursor-pointer">
+              <span>Macken</span>
+            </label>
+            <label class="condition-chip relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl border cursor-pointer select-none text-xs font-semibold">
+              <input type="checkbox" name="condition" value="Kratzer" id="direct-cond-kratzer" class="w-4 h-4 rounded border-zinc-300 text-zinc-900 focus:ring-zinc-800 accent-zinc-900 cursor-pointer">
+              <span>Kratzer</span>
+            </label>
+          </div>
         </div>
         <div>
           <label class="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-1">Ihre Nachricht / Teilebeschreibung</label>
@@ -271,9 +299,24 @@
         const name = document.getElementById('direct-name').value;
         const contact = document.getElementById('direct-contact').value;
         const msg = document.getElementById('direct-message').value;
-        const body = `Hallo Pulverfabrik-Team,\n\nName: ${name}\nKontakt: ${contact}\n\nNachricht:\n${msg}\n\n---\nGesendet über pulver-fabrik.de`;
+
+        const selectedConditions = Array.from(form.querySelectorAll('input[name="condition"]:checked'))
+          .map(cb => cb.value);
+        const conditionText = selectedConditions.length > 0 ? selectedConditions.join(', ') : 'Nicht angegeben / Unbehandelt';
+
+        const body = `Hallo Pulverfabrik-Team,
+
+Name: ${name}
+Kontakt: ${contact}
+Aktueller Zustand: ${conditionText}
+
+Nachricht / Teilebeschreibung:
+${msg}
+
+---
+Gesendet über die Website pulver-fabrik.de (Standort Niedernberg)`.trim();
         const normalizedBody = body.replace(/\r?\n/g, '\r\n');
-        const subject = 'Kontaktanfrage Pulverfabrik';
+        const subject = 'Kontaktanfrage Pulverfabrik - Zustand: ' + (selectedConditions.length > 0 ? selectedConditions.join(', ') : 'Allgemein');
 
         const mailto = `mailto:mm.pulverfabrik@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(normalizedBody)}`;
         const gmail = `https://mail.google.com/mail/?view=cm&fs=1&to=mm.pulverfabrik@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
@@ -333,6 +376,22 @@
           });
         });
       }
+
+      // Condition Chips State Synchronization
+      document.querySelectorAll('.condition-chip input[type="checkbox"]').forEach(checkbox => {
+        const updateChip = () => {
+          const parent = checkbox.closest('.condition-chip');
+          if (parent) {
+            if (checkbox.checked) {
+              parent.classList.add('is-active');
+            } else {
+              parent.classList.remove('is-active');
+            }
+          }
+        };
+        checkbox.addEventListener('change', updateChip);
+        updateChip();
+      });
     });
   </script>
 </body>
