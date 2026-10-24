@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -34,6 +34,7 @@ h1, h2, h3, h4, .font-heading {
 }
 
 .btn-chrome {
+  font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
   background: linear-gradient(135deg, #18181b 0%, #27272a 50%, #09090b 100%);
   color: #ffffff !important;
   border: 1px solid #27272a;
